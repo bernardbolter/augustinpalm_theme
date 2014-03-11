@@ -42,9 +42,9 @@
 				<div id="title_text_wrap">
 					<a id="title_text" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>.</a>
 					<p id="descript_text"><?php bloginfo( 'description' ); ?></p>
-				</div>
-			</div>
-		</header>
+				</div> <!-- #text_title_wrap -->
+			</div> <!-- #title_back -->
+		</header> <!-- #head -->
 
 	<section id="content" role="main">
 
@@ -55,44 +55,34 @@
 				<ul>
 					<li><a href="#">ARTICLES</a>
 						<ul>
-							<li class="has-sub"><a class="sub_nav" href="#"><i class="fa fa-arrow-left awe_font"></i>NEWSPAPERS</a>
-								<ul>
-									<li class="music"><a href="#"><i class="fa fa-plus awe_font"></i>MUSIC</a></li>
-									<li class="television"><a href="#">TELEVISION</a></li>
-									<li class="travel"><a href="#">TRAVEL</a></li>
-									<li class="movies"><a href="#">MOVIES</a></li>
-									<li class="art"><a href="#">ART</a></li>
-
-								</ul>
-							</li>
-							<li class="has-sub"><a class="sub_nav" href="#"><i class="fa fa-arrow-circle-left awe_font"></i>MAGAZINES</a>
-								<ul>
-									<li><a href="#">MUSIC</a></li>
-									<li><a href="#">TELEVISION</a></li>
-									<li class="travel"><a href="#">TRAVEL</a></li>
-									<li><a href="#">MOVIES</a></li>
-									<li><a href="#">ART</a></li>
-								</ul>
-							</li>
-							<li class="has-sub"><a class="sub_nav" href="#"><i class="fa fa-arrow-circle-left awe_font"></i>CATAGORIES</a>
-								<ul>
-									<li><a href="#">MUSIC</a></li>
-									<li><a href="#">TELEVISION</a></li>
-									<li class="travel"><a href="#">TRAVEL</a></li>
-									<li><a href="#">MOVIES</a></li>
-									<li><a href="#">ART</a></li>
-								</ul>
-							</li>
+							<li class="nav_music"><a href="#"><i class="fa fa-plus awe_font"></i>MUSIC</a></li>
+							<li class="nav_film"><a href="#"><i class="fa fa-plus awe_font"></i>FILM</a></li>
+							<li class="nav_tv"><a href="#"><i class="fa fa-plus awe_font"></i>TELEVISION</a></li>
+							<li class="nav_art"><a href="#"><i class="fa fa-plus awe_font"></i>ART & FASHION</a></li>
+							<li class="nav_society"><a href="#"><i class="fa fa-plus awe_font"></i>SOCIETY & TRAVEL</a></li>
+							<li class="nav_food"><a href="#"><i class="fa fa-plus awe_font"></i>FOOD & TRAVEL</a></li>
+							<li class="nav_lit"><a href="#"><i class="fa fa-plus awe_font"></i>LITERATURE</a></li>
+							<li class="nav_tech"><a href="#"><i class="fa fa-plus awe_font"></i>IT, MEDIA & TECH</a></li>
 						</ul>
-					</li>
+					</li> <!-- nav left header -->
 				</ul>
-			</div>
+			</div> <!-- #nav_right -->
 
 			<div id="nav_right">
-				<ul><li><a href="">ABOUT</a></li></ul>
-			</div>
+				<ul>
+					<li><a href="">INFO</a>
+						<ul>
+							<li><a href="#">ABOUT ME<i class="fa fa-plus awe_font"></i></a></li>
+							<li><a href="#">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
+							<li><a href="#">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
+							<li><a href="#">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
+						</ul>
+					</li> <!-- nav right header -->
+				</ul>
+			</div> <!-- #nav_right -->
 
-		</nav><!-- #access -->
+		</nav><!-- #navigation -->
+		
 		<div id="bread_wrap">
 			<p class="dark_bread">FEATURED ARTICLES</p>
 		</div>

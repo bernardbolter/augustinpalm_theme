@@ -1,37 +1,3 @@
-.site-header {
-	overflow: hidden;
-	padding: 3em 0;
-	position:relative;
-	height: 300px;
-	border-bottom: 3px solid $color2;
-}
-
-.custom-header {
-	position: absolute;
-	top:0;
-}
-
-.logo {
-	@include span-columns(8);
-	@include shift(2);
-	color: $color2;
-	position: relative;
-	z-index: 2;
-
-	.blog-name {
-		margin-bottom: 0.2em;
-		text-align: center;
-		text-shadow: 0 0 .5em $color1;
-	}
-
-	.blog-description {
-		margin-bottom: 1.5em;
-		text-align: center;
-		font-style: italic;
-		text-shadow: 0 0 .5em $color1;
-	}
-}
-
 #head_back {
 	width: 100%;
 	display: block;
@@ -63,7 +29,7 @@
 	color: #ddd;
 	font-weight: 200;
 	text-decoration: none;
-	@include font-size(100);
+	@include font-size(3.6);
 	display: block;
 	margin: 0;
 	text-align: center;

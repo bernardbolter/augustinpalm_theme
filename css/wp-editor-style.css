@@ -74,23 +74,25 @@ input, textarea {
   font-style: normal;
   font-stretch: normal;
 }
+/******************************************************************************\
+    Font calculation mixins
+\******************************************************************************/
 html {
-  font-size: 16px;
+  font-size: 62.5%;
 }
 @media screen and (min-width: 481px) {
   html {
-    font-size: 18px;
+    font-size: 18;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1025px) {
   html {
-    font-size: 20px;
+    font-size: 20;
+    font-size: 2rem;
   }
 }
 
-/******************************************************************************\
-	Font calculation mixins
-\******************************************************************************/
 /******************************************************************************\
 	Standard font styling
 \******************************************************************************/
@@ -98,6 +100,8 @@ body {
   font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 14;
+  font-size: 1.4rem;
 }
 
 em, i {
@@ -124,7 +128,7 @@ blockquote:before {
   display: block;
   float: left;
   content: "\"";
-  font-size: 40px;
+  font-size: 25;
   font-size: 2.5rem;
   margin: 0 15px 15px 0;
 }
@@ -158,7 +162,7 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 40px;
+  font-size: 25;
   font-size: 2.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -166,14 +170,14 @@ h1,
 @media screen and (min-width: 481px) {
   h1,
   .h1 {
-    font-size: 48px;
+    font-size: 30;
     font-size: 3rem;
   }
 }
 
 h2,
 .h2 {
-  font-size: 28.8px;
+  font-size: 18;
   font-size: 1.8rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -181,14 +185,14 @@ h2,
 @media screen and (min-width: 481px) {
   h2,
   .h2 {
-    font-size: 32px;
+    font-size: 20;
     font-size: 2rem;
   }
 }
 
 h3,
 .h3 {
-  font-size: 17.6px;
+  font-size: 11;
   font-size: 1.1rem;
   margin-top: 2.25rem;
   margin-bottom: 0.75rem;
@@ -196,7 +200,7 @@ h3,
 @media screen and (min-width: 481px) {
   h3,
   .h3 {
-    font-size: 19.2px;
+    font-size: 12;
     font-size: 1.2rem;
   }
 }
@@ -204,7 +208,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 16px;
+  font-size: 10;
   font-size: 1rem;
   margin-top: 2.25rem;
   margin-bottom: 0.75rem;

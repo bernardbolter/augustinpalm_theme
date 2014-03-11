@@ -25,25 +25,15 @@ font-stretch: $font-stretch;
 $base-font: 'DINNeuzeitGroteskStd-Light', sans-serif;
 $header-font: 'Georgia', serif;
 $base-line-height: 1.5;
-$base-font-size: 16px; 
-
-// Set standard font sizes in media querys
-html {
-    font-size: $base-font-size;
-
-    @include media($medium) { font-size: 18px; }
-
-    @include media($xlarge) { font-size: 20px; }
-}
-
+$base-font-size: 62.5%; 
 
 /******************************************************************************\
-	Font calculation mixins
+    Font calculation mixins
 \******************************************************************************/
 
 // Font size mixin for REM output with PX fallback
 @mixin font-size($size) {
-    font-size: $size * $base-font-size;
+    font-size: $size * 10;
     font-size: #{$size}rem;
 }
 
@@ -52,7 +42,16 @@ html {
 
 // Bottom margin mixin for REM output with PX fallback
 @mixin trailing-rows($size: 1) {
-	margin-bottom: $size * $base-line-height * 1rem;
+    margin-bottom: $size * $base-line-height * 1rem;
+}
+
+// Set standard font sizes in media querys
+html {
+    font-size: $base-font-size;
+
+    @include media($medium) { @include font-size(1.8); }
+
+    @include media($xlarge) { @include font-size(2); }
 }
 
 
@@ -64,6 +63,7 @@ body {
 	font-family: $base-font;
 	line-height: $base-line-height;
 	font-weight: 400;
+    @include font-size(1.4);
 }
 
 em, i {
