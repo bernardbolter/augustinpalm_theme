@@ -5,8 +5,8 @@
 }
 
 body {
-  background: #222222;
-  color: #efefef;
+  background: #a6946f;
+  color: #7f8772;
 }
 
 body.custom-background {
@@ -18,12 +18,12 @@ body.custom-background {
 }
 
 a {
-  color: #75d9c6;
+  color: #a6946f;
   text-decoration: none;
 }
 
 h1 a {
-  color: #efefef;
+  color: #7f8772;
 }
 
 img {
@@ -33,7 +33,7 @@ img {
 
 input, textarea {
   border: 1px solid #222222;
-  background: #efefef;
+  background: #7f8772;
   padding: 0.3em 0.4em;
   box-shadow: inset -1px -1px 6px #222222;
 }
@@ -66,6 +66,14 @@ input, textarea {
 /******************************************************************************\
 	Settings
 \******************************************************************************/
+@font-face {
+  font-family: "DINNeuzeitGroteskStd-Light";
+  src: url(font-path("dinneuzeitgroteskstd-light-webfont.eot"));
+  src: url(font-path("dinneuzeitgroteskstd-light-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("dinneuzeitgroteskstd-light-webfont.woff")) format("woff"), url(font-path("dinneuzeitgroteskstd-light-webfont.ttf")) format("truetype"), url(font-path("dinneuzeitgroteskstd-light-webfont.svg#DINNeuzeitGroteskStd-Light")) format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
 html {
   font-size: 16px;
 }
@@ -87,7 +95,7 @@ html {
 	Standard font styling
 \******************************************************************************/
 body {
-  font-family: "Verdana", sans-serif;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }

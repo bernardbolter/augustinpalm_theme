@@ -33,6 +33,13 @@ module.exports = function(grunt) {
 			]
 		},
 
+		concat: {
+			dist: {
+				src: ['../js/vendor/*.js','../js/_myscripts.js'],
+				dest: '../js/scripts.js'
+			}
+		},
+
 		// concat and minify our JS
 		uglify: {
 			dist: {
@@ -155,6 +162,7 @@ module.exports = function(grunt) {
 	// Development task
 	grunt.registerTask('default', [
 		'jshint',
+		'concat',
 		'uglify',
 		'sass:dev',
 		'sass:editorstyles'
@@ -164,6 +172,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('dist', function() {
 		grunt.task.run([
 			'jshint',
+			'concat',
 			'uglify',
 			'sass:prod',
 			'sass:editorstyles',
