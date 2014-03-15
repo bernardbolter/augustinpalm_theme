@@ -37,32 +37,36 @@
 	background: #333;
 }
 
-.bot_news {
-	background: #666;
-}
-
-.bot_magazines {
-	background: #999;
-}
-
 .bot_music {
-	background: $darkb;
+	background: $music;
 }
 
-.bot_tele {
-	background: $darkg;
+.bot_film {
+	background: $film;
 }
 
-.bot_travel {
-	background: $lightg;
-}
-
-.bot_movies {
-	background: $yellow;
+.bot_tv {
+	background: $tv;
 }
 
 .bot_art {
-	background: $orange;
+	background: $art;
+}
+
+.bot_society {
+	background: $society;
+}
+
+.bot_food {
+	background: $food;
+}
+
+.bot_lit {
+	background: $lit;
+}
+
+.bot_tech {
+	background: $tech;
 }
 
 /* FOOTER

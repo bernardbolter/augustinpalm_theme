@@ -1,13 +1,36 @@
+// mixins
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
 // variables
 $color1: #222;
 $color2: #7f8772;
 $color3: #a6946f;
 
-$darkb: #3a4049;
-$darkg: #435658;
-$lightg: #7f8772;
-$yellow: #a6946f;
-$orange: #866f5d;
+/*
+$music: #487aad;
+$film: #426494;
+$tv: #89a191;
+$art: #556564;
+$society: #707e98;
+$food: #998979;
+$lit: #ba987d;
+$tech: #a26f38;
+*/
+
+$music: #223959;
+$film: #28475C;
+$tv: #4A6C74;
+$art: #8BA693;
+$society: #32494D;
+$food: #678774;
+$lit: #BAB28D;
+$tech: #A1685A;
+
 
 // default styling
 body {
@@ -42,19 +65,4 @@ input, textarea {
 	background: $color2;
 	padding: 0.3em 0.4em;
 	box-shadow: inset -1px -1px 6px $color1;
-}
-
-.site {
-	overflow: hidden;
-	background: rgba($color1, 0.85);
-	@include outer-container;
-}
-
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-	max-width: 100%;
-	height: auto;
 }

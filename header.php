@@ -49,13 +49,13 @@
 	<section id="content" role="main">
 
 		<nav id="navigation" role="navigation" class="clearfix">
-
+				
 			<div id="nav_left">
 				<p id="erik_text">ERIK AUGUSTIN PALM.</p>
 				<ul>
-					<li><a href="#">ARTICLES</a>
-						<ul>
-							<li class="nav_music"><a href="#"><i class="fa fa-plus awe_font"></i>MUSIC</a></li>
+					<li><a href="#" id="articles_nav">ARTICLES</a>
+						<ul id="articles_drop">
+							<li class="nav_music"><a href="#"><span id="plus_music"><i class="fa fa-plus awe_font"></i></span>MUSIC</a></li>
 							<li class="nav_film"><a href="#"><i class="fa fa-plus awe_font"></i>FILM</a></li>
 							<li class="nav_tv"><a href="#"><i class="fa fa-plus awe_font"></i>TELEVISION</a></li>
 							<li class="nav_art"><a href="#"><i class="fa fa-plus awe_font"></i>ART & FASHION</a></li>
@@ -63,21 +63,21 @@
 							<li class="nav_food"><a href="#"><i class="fa fa-plus awe_font"></i>FOOD & TRAVEL</a></li>
 							<li class="nav_lit"><a href="#"><i class="fa fa-plus awe_font"></i>LITERATURE</a></li>
 							<li class="nav_tech"><a href="#"><i class="fa fa-plus awe_font"></i>IT, MEDIA & TECH</a></li>
-						</ul>
-					</li> <!-- nav left header -->
+						</ul> <!-- articles_drop -->
+					</li>
 				</ul>
 			</div> <!-- #nav_right -->
 
 			<div id="nav_right">
 				<ul>
-					<li><a href="">INFO</a>
-						<ul>
+					<li><a href="#" id="info_nav">INFO</a>
+						<ul id="info_drop">
 							<li><a href="#">ABOUT ME<i class="fa fa-plus awe_font"></i></a></li>
 							<li><a href="#">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
 							<li><a href="#">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
 							<li><a href="#">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
-						</ul>
-					</li> <!-- nav right header -->
+						</ul> <!-- info_drop -->
+					</li>
 				</ul>
 			</div> <!-- #nav_right -->
 

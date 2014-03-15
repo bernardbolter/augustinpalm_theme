@@ -933,3 +933,20 @@ $(document).ready( function() {
   });
  });
 });
+
+$(document).ready( function() {
+    $( '.nav_music' ).hover (
+         function () {
+           $('#music_plus').css({"display":"visible"});
+         }, 
+         function () {
+           $('#music_plus').css({"display":"hidden"});
+         }
+    );
+});
+
+
+
+
+
+

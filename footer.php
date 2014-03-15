@@ -1,13 +1,14 @@
 </div>
 <div id="bottom_nav" class="clearfix">
 <p class="bot_featured">FEATURED ARTICLES <i class="fa fa-plus"></i></p>
-<p class="bot_news">NEWSPAPERS <i class="fa fa-plus"></i></p>
-<p class="bot_magazines">MAGAZINES <i class="fa fa-plus"></i></p>
 <p class="bot_music">MUSIC <i class="fa fa-plus"></i></p>
-<p class="bot_tele">TELEVISION <i class="fa fa-plus"></i></p>
-<p class="bot_travel">TRAVEL <i class="fa fa-plus"></i></p>
-<p class="bot_movies">MOVIES <i class="fa fa-plus"></i></p>
-<p class="bot_art">ART <i class="fa fa-plus"></i></p> 	
+<p class="bot_film">FILM <i class="fa fa-plus"></i></p>
+<p class="bot_tv">TELEVISION <i class="fa fa-plus"></i></p>
+<p class="bot_art">ART & FASHION <i class="fa fa-plus"></i></p>
+<p class="bot_society">SOCIETY & FASHION <i class="fa fa-plus"></i></p>
+<p class="bot_food">FOOD & TRAVEL <i class="fa fa-plus"></i></p>
+<p class="bot_lit">LITERATURE <i class="fa fa-plus"></i></p> 	
+<p class="bot_tech">IT, MEDIA & TECH <i class="fa fa-plus"></i></p> 
 </div>
 
 </section><!-- #main -->

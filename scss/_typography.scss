@@ -25,16 +25,15 @@ font-stretch: $font-stretch;
 $base-font: 'DINNeuzeitGroteskStd-Light', sans-serif;
 $header-font: 'Georgia', serif;
 $base-line-height: 1.5;
-$base-font-size: 62.5%; 
 
 /******************************************************************************\
     Font calculation mixins
 \******************************************************************************/
 
 // Font size mixin for REM output with PX fallback
-@mixin font-size($size) {
-    font-size: $size * 10;
-    font-size: #{$size}rem;
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
 }
 
 // Top margin mixin for REM output with PX fallback
@@ -47,11 +46,7 @@ $base-font-size: 62.5%;
 
 // Set standard font sizes in media querys
 html {
-    font-size: $base-font-size;
-
-    @include media($medium) { @include font-size(1.8); }
-
-    @include media($xlarge) { @include font-size(2); }
+    font-size: 62.5%;
 }
 
 
