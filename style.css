@@ -2592,26 +2592,17 @@ p ~ h1 {
 /* NAV LEFT
    ========================================================================== */
 #nav_left {
-  width: 70%;
+  width: 49.5%;
   margin: 0 0.5% 0 0;
   float: left;
   background: #999;
   padding: 0;
 }
 
-#articles_nav {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
-  color: #eee;
-  font-size: 14px;
-  font-size: 1.4rem;
-}
-
 #nav_left ul {
   margin: 0;
   text-align: right;
   height: 30px;
-  width: 180px;
-  float: right;
   padding: 0;
 }
 
@@ -2625,10 +2616,6 @@ p ~ h1 {
   letter-spacing: 0.1em;
   padding: 7px 10px 0 0;
   display: inline-block;
-}
-
-.sub_nav {
-  background: #666;
 }
 
 #nav_left ul, #nav_left li {
@@ -2653,7 +2640,6 @@ p ~ h1 {
   top: 100%;
   left: 0;
   z-index: 598;
-  border-top: 2px solid transparent;
 }
 
 #nav_left ul li:hover > ul {
@@ -2679,11 +2665,7 @@ p ~ h1 {
 .awe_font {
   display: inline-block;
   padding: 0 9px 0;
-  display: hidden;
-}
-
-#music_plus {
-  display: hidden;
+  visibility: hidden;
 }
 
 .nav_music a {
@@ -2702,6 +2684,10 @@ p ~ h1 {
   filter: alpha(opacity=100);
 }
 
+.nav_music a:hover .awe_font {
+  visibility: visible;
+}
+
 .nav_film a {
   background: #1c3140;
   opacity: 0.85;
@@ -2718,11 +2704,28 @@ p ~ h1 {
   filter: alpha(opacity=100);
 }
 
+.nav_film a:hover .awe_font {
+  visibility: visible;
+}
+
 .nav_tv a {
   background: #334b51;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_tv a:hover {
+  background: #4a6c74;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_tv a:hover .awe_font {
+  visibility: visible;
 }
 
 .nav_art a {
@@ -2730,6 +2733,19 @@ p ~ h1 {
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_art a:hover {
+  background: #8ba693;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_art a:hover .awe_font {
+  visibility: visible;
 }
 
 .nav_society a {
@@ -2737,6 +2753,19 @@ p ~ h1 {
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_society a:hover {
+  background: #32494d;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_society a:hover .awe_font {
+  visibility: visible;
 }
 
 .nav_food a {
@@ -2744,6 +2773,19 @@ p ~ h1 {
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_food a:hover {
+  background: #678774;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_food a:hover .awe_font {
+  visibility: visible;
 }
 
 .nav_lit a {
@@ -2751,6 +2793,19 @@ p ~ h1 {
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_lit a:hover {
+  background: #bab28d;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_lit a:hover .awe_font {
+  visibility: visible;
 }
 
 .nav_tech a {
@@ -2758,13 +2813,26 @@ p ~ h1 {
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_tech a:hover {
+  background: #a1685a;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_tech a:hover .awe_font {
+  visibility: visible;
 }
 
 /* NAV RIGHT
    ========================================================================== */
 #nav_right {
-  width: 29%;
-  margin: 0;
+  width: 49.5%;
+  margin: 0 0 0 0.5%;
   float: left;
   background: #999;
 }
@@ -2773,16 +2841,143 @@ p ~ h1 {
   margin: 0;
   text-align: left;
   height: 30px;
-  padding: 0 0 0 10px;
+  padding: 0;
 }
 
 #nav_right ul li a {
   color: #eee;
   text-decoration: none;
-  font-family: 'DINNeuzeitGroteskStd-Light', sans-serif;
-  font-size: 15px;
-  line-height: 34px;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 23px;
   letter-spacing: 0.1em;
+  padding: 7px 0 0 10px;
+  display: inline-block;
+}
+
+#nav_right ul, #nav_right li {
+  list-style: none;
+  margin: 0;
+}
+
+#nav_right ul {
+  position: relative;
+  z-index: 597;
+}
+
+#nav_right ul li.hover,
+#nav_right ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+#nav_right ul ul {
+  visibility: hidden;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+}
+
+#nav_right ul li:hover > ul {
+  visibility: visible;
+}
+
+#nav_right ul ul li {
+  font-weight: normal;
+  height: 30px;
+}
+
+#nav_right ul li:hover > a {
+  color: #FFF;
+  display: visible !important;
+}
+
+#nav_right:after, #nav_right ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.nav_about a {
+  background: #24262c;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_about a:hover {
+  background: #34373f;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_about a:hover .awe_font {
+  visibility: visible;
+}
+
+.nav_photo a {
+  background: #484b51;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_photo a:hover {
+  background: #686c75;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_photo a:hover .awe_font {
+  visibility: visible;
+}
+
+.nav_other a {
+  background: #858074;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_other a:hover {
+  background: #beb7a7;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_other a:hover .awe_font {
+  visibility: visible;
+}
+
+.nav_contact a {
+  background: #635d56;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav_contact a:hover {
+  background: #8e867c;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.nav_contact a:hover .awe_font {
+  visibility: visible;
 }
 
 /* CONTENT STYLES

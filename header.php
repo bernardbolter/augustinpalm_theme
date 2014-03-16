@@ -55,7 +55,7 @@
 				<ul>
 					<li><a href="#" id="articles_nav">ARTICLES</a>
 						<ul id="articles_drop">
-							<li class="nav_music"><a href="#"><span id="plus_music"><i class="fa fa-plus awe_font"></i></span>MUSIC</a></li>
+							<li class="nav_music"><a href="#"><i class="fa fa-plus awe_font"></i>MUSIC</a></li>
 							<li class="nav_film"><a href="#"><i class="fa fa-plus awe_font"></i>FILM</a></li>
 							<li class="nav_tv"><a href="#"><i class="fa fa-plus awe_font"></i>TELEVISION</a></li>
 							<li class="nav_art"><a href="#"><i class="fa fa-plus awe_font"></i>ART & FASHION</a></li>
@@ -72,10 +72,10 @@
 				<ul>
 					<li><a href="#" id="info_nav">INFO</a>
 						<ul id="info_drop">
-							<li><a href="#">ABOUT ME<i class="fa fa-plus awe_font"></i></a></li>
-							<li><a href="#">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
-							<li><a href="#">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
-							<li><a href="#">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
+							<li class="nav_about"><a href="#">ABOUT<i class="fa fa-plus awe_font"></i></a></li>
+							<li class="nav_photo"><a href="#">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
+							<li class="nav_other"><a href="#">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
+							<li class="nav_contact"><a href="#">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
 						</ul> <!-- info_drop -->
 					</li>
 				</ul>

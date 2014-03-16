@@ -27,25 +27,17 @@
    ========================================================================== */
 
 #nav_left {
-	width: 70%;
+	width: 49.5%;
 	margin: 0 0.5% 0 0;
 	float: left;
 	background: #999;
 	padding: 0; 
 }
 
-#articles_nav {
-	font-family: $base-font;
-	color: #eee;
-	@include font-size(1.4);
-}
-
 #nav_left ul {
 	margin: 0;
 	text-align: right;
 	height: 30px;
-	width: 180px;
-	float: right;
 	padding: 0;
 }
 
@@ -58,10 +50,6 @@
 	letter-spacing: 0.1em;
 	padding: 7px 10px 0 0;
 	display: inline-block;
-}
-
-.sub_nav {
-	background: #666;
 }
 
 #nav_left ul, #nav_left li {
@@ -86,7 +74,6 @@
 	top: 100%; 
 	left: 0; 
 	z-index: 598;
-	border-top: 2px solid transparent;
 }
 
 #nav_left ul li:hover > ul { 
@@ -112,11 +99,7 @@
 .awe_font {
 	display: inline-block;
 	padding: 0 9px 0;
-	display: hidden;
-}
-
-#music_plus {
-	display: hidden;
+	visibility: hidden;
 }
 
 .nav_music a {
@@ -131,6 +114,10 @@
 	@include opacity(1);
 }
 
+.nav_music a:hover .awe_font {
+	visibility: visible;
+}
+
 .nav_film a {
 	background: shade($film, 30%);
 	@include opacity(0.85);
@@ -143,48 +130,112 @@
 	@include opacity(1);
 }
 
+.nav_film a:hover .awe_font {
+	visibility: visible;
+}
+
 .nav_tv a {
 	background: shade($tv, 30%);
 	@include opacity(0.85);
 	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_tv a:hover {
+	background: $tv;
+	@include opacity(1);
+}
+
+.nav_tv a:hover .awe_font {
+	visibility: visible;
 }
 
 .nav_art a {
 	background: shade($art, 30%);
 	@include opacity(0.85);
 	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_art a:hover {
+	background: $art;
+	@include opacity(1);
+}
+
+.nav_art a:hover .awe_font {
+	visibility: visible;
 }
 
 .nav_society a {
 	background: shade($society, 30%);
 	@include opacity(0.85);
 	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_society a:hover {
+	background: $society;
+	@include opacity(1);
+}
+
+.nav_society a:hover .awe_font {
+	visibility: visible;
 }
 
 .nav_food a {
 	background: shade($food, 30%);
 	@include opacity(0.85);
 	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_food a:hover {
+	background: $food;
+	@include opacity(1);
+}
+
+.nav_food a:hover .awe_font {
+	visibility: visible;
 }
 
 .nav_lit a {
 	background: shade($lit, 30%);
 	@include opacity(0.85);
 	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_lit a:hover {
+	background: $lit;
+	@include opacity(1);
+}
+
+.nav_lit a:hover .awe_font {
+	visibility: visible;
 }
 
 .nav_tech a {
 	background: shade($tech, 30%);
 	@include opacity(0.85);
 	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_tech a:hover {
+	background: $tech;
+	@include opacity(1);
+}
+
+.nav_tech a:hover .awe_font {
+	visibility: visible;
 }
 
 /* NAV RIGHT
    ========================================================================== */
 
 #nav_right {
-	width: 29%;
-	margin: 0;
+	width: 49.5%;
+	margin: 0 0 0 0.5%;
 	float: left;
 	background: #999;
 }
@@ -193,14 +244,124 @@
 	margin: 0;
 	text-align: left;
 	height: 30px;
-	padding: 0 0 0 10px;
+	padding: 0;
 }
 
 #nav_right ul li a {
 	color: #eee;
 	text-decoration: none;
-	font-family: 'DINNeuzeitGroteskStd-Light', sans-serif;
-	font-size: 15px;
-	line-height: 34px;
+	font-family: $base-font;
+	@include font-size(1.2);
+	line-height: 23px;
 	letter-spacing: 0.1em;
+	padding: 7px 0 0 10px;
+	display: inline-block;
+}
+
+#nav_right ul, #nav_right li {
+	list-style: none;
+	margin: 0;
+}
+
+#nav_right ul {
+	position: relative; 
+	z-index: 597; 
+}
+
+#nav_right ul li.hover,
+#nav_right ul li:hover {
+	position: relative; 
+	z-index: 599; 
+	cursor: default;
+}
+
+#nav_right ul ul {
+	visibility: hidden; 
+	top: 100%; 
+	left: 0; 
+	z-index: 598;
+}
+
+#nav_right ul li:hover > ul { 
+	visibility: visible;
+}
+
+#nav_right ul ul li {
+	font-weight: normal; 
+	height: 30px;
+}
+
+#nav_right ul li:hover > a {
+      color: #FFF;
+      display: visible !important;
+}
+
+#nav_right:after, #nav_right ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+.nav_about a {
+	background: shade($about, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_about a:hover {
+	background: $about;
+	@include opacity(1);
+}
+
+.nav_about a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_photo a {
+	background: shade($photo, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_photo a:hover {
+	background: $photo;
+	@include opacity(1);
+}
+
+.nav_photo a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_other a {
+	background: shade($other, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_other a:hover {
+	background: $other;
+	@include opacity(1);
+}
+
+.nav_other a:hover .awe_font {
+	visibility: visible;
+}
+
+.nav_contact a {
+	background: shade($contact, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_contact a:hover {
+	background: $contact;
+	@include opacity(1);
+}
+
+.nav_contact a:hover .awe_font {
+	visibility: visible;
 }
