@@ -7,9 +7,9 @@
 }
 
 // variables
-$color1: #222;
-$color2: #7f8772;
-$color3: #a6946f;
+$color1: #333;
+$color2: #666;
+$color3: #999;
 
 /*
 $music: #487aad;
@@ -21,6 +21,8 @@ $food: #998979;
 $lit: #ba987d;
 $tech: #a26f38;
 */
+
+$cover: #09101b;
 
 $music: #223959;
 $film: #28475C;
@@ -39,8 +41,8 @@ $contact: #8E867C;
 
 // default styling
 body {
-	background: $color3;
-	color: $color2;
+	background: $cover;
+	color: #eee;
 }
 
 body.custom-background {
@@ -52,12 +54,12 @@ body.custom-background {
 }
 
 a {
-	color: $color3;
+	color: #eee;
 	text-decoration: none;
 }
 
 h1 a {
-	color: $color2;
+	color: #eee;
 }
 
 img {
@@ -66,8 +68,9 @@ img {
 }
 
 input, textarea {
-	border: 1px solid $color1;
-	background: $color2;
+	border: none;
+	background: #ddd;
+	@include opacity(0.7);
 	padding: 0.3em 0.4em;
-	box-shadow: inset -1px -1px 6px $color1;
+	box-shadow: none;
 }

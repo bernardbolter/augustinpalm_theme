@@ -1,72 +1,233 @@
-.footer-widgets {
-	@include clearfix;
-	@include span-columns(12);
-
-	background: $color1;
-	padding: 1.5em 0;
-	list-style: none;
-	margin: 0;
-
-}
-
 /* BOTTOM NAVIGATION
    ========================================================================== */
 
 #bottom_nav {
 	width: 100%;
 	display: block;
-	margin: 40px 0 0 0;
 }
 
-#bottom_nav p {
-	font-family: 'DINNeuzeitGroteskStd-Light', sans-serif;
-	font-size: 12px;
-	text-align: right;
-	padding: 10px 10px 4px 25px;
+#bottom_nav ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#bottom_nav ul li {
+	list-style: none;
+	width: 100%;
+}
+
+#bottom_nav ul li a {
+	font-family: $base-font;
+	@include font-size(1.4);
 	float: left;
 	color: #eee; 
 	margin: 0;
+	padding: 5px 0 3px 10%;
+	width: 100%;
+	line-height: 10px;
+	text-decoration: none;
+	@include transition (all 0.5s ease);
+
+		@include respond-to(medium) {
+		@include font-size(1.2);
+	}
+
+		@include respond-to(large) {
+		@include font-size(1);
+	}
 }
 
-#bottom_nav p i {
-	margin-left: 10px;
+.bot_music a {
+	background: shade($music, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
 }
 
-.bot_featured {
-	width: 15%;
-	background: #333;
-}
-
-.bot_music {
+.bot_music a:hover {
 	background: $music;
+	@include opacity(1);
 }
 
-.bot_film {
+.bot_music a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_film a {
+	background: shade($film, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_film a:hover {
 	background: $film;
+	@include opacity(1);
 }
 
-.bot_tv {
+.bot_film a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_tv a {
+	background: shade($tv, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_tv a:hover {
 	background: $tv;
+	@include opacity(1);
 }
 
-.bot_art {
+.bot_tv a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_art a {
+	background: shade($art, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_art a:hover {
 	background: $art;
+	@include opacity(1);
 }
 
-.bot_society {
+.bot_art a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_society a {
+	background: shade($society, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_society a:hover {
 	background: $society;
+	@include opacity(1);
 }
 
-.bot_food {
+.bot_society a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_food a {
+	background: shade($food, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_food a:hover {
 	background: $food;
+	@include opacity(1);
 }
 
-.bot_lit {
+.bot_food a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_lit a {
+	background: shade($lit, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_lit a:hover {
 	background: $lit;
+	@include opacity(1);
 }
 
-.bot_tech {
+.bot_lit a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_tech a {
+	background: shade($tech, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_tech a:hover {
 	background: $tech;
+	@include opacity(1);
+}
+
+.bot_tech a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_cover a {
+	background: shade($cover, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_cover a:hover {
+	background: $cover;
+	@include opacity(1);
+}
+
+.bot_cover a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_about a {
+	background: shade($about, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_about a:hover {
+	background: $about;
+	@include opacity(1);
+}
+
+.bot_about a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_photo a {
+	background: shade($photo, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_photo a:hover {
+	background: $photo;
+	@include opacity(1);
+}
+
+.bot_photo a:hover .awe_font {
+	visibility: visible;
+}
+
+.bot_other a {
+	background: shade($other, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.bot_other a:hover {
+	background: $other;
+	@include opacity(1);
+}
+
+.bot_other a:hover .awe_font {
+	visibility: visible;
 }
 
 /* FOOTER
@@ -74,32 +235,107 @@
 
 #footer {
 	width: 100%;
-	background: #000 url(gfx/bottom_portrait.jpg) no-repeat left 0;
-	position: fixed;
-	bottom: 0;
-	height: 500px;
-	z-index: -2;
+	background: $cover;
+	padding: 20px 0;
+	@include transition (all 0.5s ease);
+
+	@include respond-to(medium) {
+		background: #030303 url(gfx/bottom_portrait.jpg) no-repeat 0 0;
+	}
 }
 
 #contact_box {
-	width: 400px;
-	margin: 50px 0 0 500px;
-	background: rgba(0,0,0,0.6);
+	width: 300px;
+	margin: 20px auto;
 	display: block;
+	overflow: hidden;
+
+	@include respond-to(medium) {
+		margin: 20px 0 0 40%;
+	}
+
+	@include respond-to(large) {
+		margin: 20px 0 0 50%;
+	}
 }
 
 .contact_plus {
 	width: 100px;
 	float: left;
 	margin: 0;
+	@include font-size(6);
+	@include opacity(0.7);
 }
 
 .contact_name_box {
-	width: 300px;
+	width: 200px;
 	float: left;
 	display: block;
 }
 
 .contact_name_box p {
+	color: #ddd;
+	text-align: right;
+	margin: 3px 0;
+	letter-spacing: 0.2em;
+}
+
+.contact_icons {
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.contact_icons li {
+	list-style: none;
+}
+
+.contact_icons li a {
+	display: inline-block;
+	float: right;
+	padding: 4px;
+	color: #999;
+	@include font-size(2.4);
+	@include transition (all 0.5s ease);
+}
+
+.contact_icons li a:hover {
 	color: #eee;
+}
+
+.contact_form {
+	display: block;
+	color: #ddd;
+	width: 300px;
+	margin: 0 auto;
+
+	@include respond-to(medium) {
+		margin: 0 0 0 40%;
+	}
+
+	@include respond-to(large) {
+		margin: 0 0 0 50%;
+	}
+}
+
+.contact_form p {
+	@include font-size(1);
+	margin: 10px 0 4px;
+	letter-spacing: 0.2em;
+}
+
+.contact_form input,textarea {
+	width: 300px;
+	margin-bottom: 3px;
+}
+
+.wpcf7 input:hover, 
+.wpcf7 input:focus, 
+.wpcf7 input:active, 
+.wpcf7 textarea:hover, 
+.wpcf7 textarea:focus, 
+.wpcf7 textarea:active {
+  background: #eee;
+  outline: none;
+  @include opacity(0.9);
 }

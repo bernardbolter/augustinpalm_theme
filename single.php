@@ -9,35 +9,10 @@
 
 get_header(); ?>
 
-	<section class="page-content primary" role="main">
-
-		<?php
-			if ( have_posts() ) : the_post();
-
-				get_template_part( 'loop', get_post_format() ); ?>
-
-				<aside class="post-aside">
-
-					<div class="post-links">
-						<?php previous_post_link( '%link', __( '&laquo; Previous post', 'augustinpalm_theme' ) ) ?>
-						<?php next_post_link( '%link', __( 'Next post &raquo;', 'augustinpalm_theme' ) ); ?>
-					</div>
-
-					<?php
-						if ( comments_open() || get_comments_number() > 0 ) :
-							comments_template( '', true );
-						endif;
-					?>
-
-				</aside><?php
-
-			else :
-
-				get_template_part( 'loop', 'empty' );
-
-			endif;
-		?>
-
-	</section>
+<?php if (have_posts()) : ?>
+<?php while (have_posts()) : the_post(); ?>
+<?php the_content(); ?>
+<?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>

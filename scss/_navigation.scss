@@ -5,7 +5,7 @@
 	width: 100%;
 	height: 30px;
 	display: block;
-	z-index: 1;
+	z-index: 5;
 	position: static;
 }
 
@@ -13,7 +13,7 @@
 	color: #eee;
 	text-decoration: none;
 	font-family: $base-font;
-	font-size: 20px;
+	@include font-size(2);
 	line-height: 23px;
 	letter-spacing: 0.1em;
 	text-align: center;
@@ -21,6 +21,18 @@
 	display: none;
 	float: left;
 	padding-top: 7px;
+
+	@include respond-to(medium) {
+		margin: 0 0 0 2%;
+	}
+
+	@include respond-to(large) {
+		margin: 0 0 0 15%;
+	}
+
+	@include respond-to(xlarge) {
+		margin: 0 0 0 25%;
+	}
 }
 
 /* NAV LEFT
@@ -32,6 +44,18 @@
 	float: left;
 	background: #999;
 	padding: 0; 
+
+	@include respond-to(medium) {
+		width:  70%;
+	}
+
+	@include respond-to(large) {
+		width:  75%;
+	}
+
+	@include respond-to(xlarge) {
+		width:  75%;
+	}
 }
 
 #nav_left ul {
@@ -50,6 +74,11 @@
 	letter-spacing: 0.1em;
 	padding: 7px 10px 0 0;
 	display: inline-block;
+}
+
+#articles_nav {
+	background: #999;
+	padding: 7px 10px 0 0;
 }
 
 #nav_left ul, #nav_left li {
@@ -230,6 +259,22 @@
 	visibility: visible;
 }
 
+.nav_cover a {
+	background: shade($cover, 30%);
+	@include opacity(0.85);
+	display: block;
+	@include transition (all 0.5s ease);
+}
+
+.nav_cover a:hover {
+	background: $cover;
+	@include opacity(1);
+}
+
+.nav_cover a:hover .awe_font {
+	visibility: visible;
+}
+
 /* NAV RIGHT
    ========================================================================== */
 
@@ -238,6 +283,20 @@
 	margin: 0 0 0 0.5%;
 	float: left;
 	background: #999;
+
+	@include respond-to(medium) {
+		width:  29%;
+	}
+
+	@include respond-to(large) {
+		width:  24.5%;
+		margin: 0;
+	}
+
+	@include respond-to(xlarge) {
+		width:  24.5%;
+		margin: 0;
+	}
 }
 
 #nav_right ul {

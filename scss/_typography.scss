@@ -23,7 +23,7 @@ font-stretch: $font-stretch;
 
 // Variables
 $base-font: 'DINNeuzeitGroteskStd-Light', sans-serif;
-$header-font: 'Georgia', serif;
+$body-font: 'Buenard', serif;
 $base-line-height: 1.5;
 
 /******************************************************************************\
@@ -99,7 +99,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $header-font;
+	font-family: $base-font;
 	line-height: 1.2;
     text-transform: uppercase;
 

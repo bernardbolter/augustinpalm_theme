@@ -15,8 +15,8 @@ $lit: #ba987d;
 $tech: #a26f38;
 */
 body {
-  background: #a6946f;
-  color: #7f8772;
+  background: #09101b;
+  color: #eee;
 }
 
 body.custom-background {
@@ -28,12 +28,12 @@ body.custom-background {
 }
 
 a {
-  color: #a6946f;
+  color: #eee;
   text-decoration: none;
 }
 
 h1 a {
-  color: #7f8772;
+  color: #eee;
 }
 
 img {
@@ -42,10 +42,12 @@ img {
 }
 
 input, textarea {
-  border: 1px solid #222222;
-  background: #7f8772;
+  border: none;
+  background: #ddd;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
   padding: 0.3em 0.4em;
-  box-shadow: inset -1px -1px 6px #222222;
+  box-shadow: none;
 }
 
 /******************************************************************************\
@@ -115,7 +117,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Georgia", serif;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -206,4 +208,22 @@ p ~ h1 {
 html .mceContentBody {
   font-size: 100%;
   max-width: 650px;
+}
+
+body.admin-bar {
+  margin-top: -28px;
+  padding-bottom: 28px;
+}
+
+#wpadminbar {
+  top: auto !important;
+  bottom: 0;
+}
+
+#wpadminbar .quicklinks > ul > li {
+  position: relative;
+}
+
+#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
+  bottom: 28px;
 }
