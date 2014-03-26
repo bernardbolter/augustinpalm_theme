@@ -6,6 +6,8 @@ Template Name: Cover Stories
 
 <?php get_header(); ?>
 
+<?php get_template_part( 'head_image' ); ?>
+<?php get_template_part( 'nav' ); ?>
 <?php get_template_part( 'breadcrumb' ); ?>
 
 <div id="short_bio_box" class="clearfix">

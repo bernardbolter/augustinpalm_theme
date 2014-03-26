@@ -1,17 +1,16 @@
-<?php
-/**
- * augustinpalm_theme template for displaying Single-Posts
- *
- * @package WordPress
- * @subpackage augustinpalm_theme
- * @since augustinpalm_theme 1.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
+<?php get_template_part( 'nav' ); ?>
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
+
+<div class="embed-box">
 <?php the_content(); ?>
+<style>
+.issuuembed span {display:none !important;}
+</style>
+</div>
+
 <?php endwhile; ?>
 <?php endif; ?>
 

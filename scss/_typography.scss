@@ -20,10 +20,12 @@ font-stretch: $font-stretch;
 }
 
 @include declare-font-face('DINNeuzeitGroteskStd-Light', 'dinneuzeitgroteskstd-light-webfont', 200);
+@include declare-font-face('news_cyclebold', 'newscycle-bold-webfont', 700);
+@include declare-font-face('news_cycleregular', 'newscycle-regular-webfont', 400);
 
 // Variables
 $base-font: 'DINNeuzeitGroteskStd-Light', sans-serif;
-$body-font: 'Buenard', serif;
+$body-font: 'Tinos', serif;
 $base-line-height: 1.5;
 
 /******************************************************************************\

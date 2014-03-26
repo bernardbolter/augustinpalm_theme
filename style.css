@@ -2185,6 +2185,22 @@ input, textarea {
   font-style: normal;
   font-stretch: normal;
 }
+@font-face {
+  font-family: "news_cyclebold";
+  src: url(font-path("newscycle-bold-webfont.eot"));
+  src: url(font-path("newscycle-bold-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-bold-webfont.woff")) format("woff"), url(font-path("newscycle-bold-webfont.ttf")) format("truetype"), url(font-path("newscycle-bold-webfont.svg#news_cyclebold")) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "news_cycleregular";
+  src: url(font-path("newscycle-regular-webfont.eot"));
+  src: url(font-path("newscycle-regular-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-regular-webfont.woff")) format("woff"), url(font-path("newscycle-regular-webfont.ttf")) format("truetype"), url(font-path("newscycle-regular-webfont.svg#news_cycleregular")) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
 /******************************************************************************\
     Font calculation mixins
 \******************************************************************************/
@@ -2548,11 +2564,16 @@ p ~ h1 {
   width: 100%;
   margin: 0 auto;
   display: block;
-  padding: 43px 0 0 0;
+  padding: 19px 0 0 0;
 }
 @media only screen and (min-width: 481px) {
   #title_text_wrap {
-    padding: 50px 0 0 0;
+    padding: 48px 0 0 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #title_text_wrap {
+    padding: 25px 0 0 0;
   }
 }
 
@@ -2569,7 +2590,6 @@ p ~ h1 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  line-height: 54px;
 }
 @media only screen and (min-width: 481px) {
   #title_text {
@@ -2642,6 +2662,15 @@ p ~ h1 {
 @media only screen and (min-width: 1025px) {
   #erik_text {
     margin: 0 0 0 25%;
+  }
+}
+
+.hide_erik {
+  display: none;
+}
+@media only screen and (min-width: 481px) {
+  .hide_erik {
+    display: inline;
   }
 }
 
@@ -3817,7 +3846,7 @@ article:after {
 }
 
 .short_bio_text {
-  font-family: "Buenard", serif;
+  font-family: "Tinos", serif;
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 400;
@@ -3881,4 +3910,233 @@ article:after {
 
 .short_bio_text_icons li a:hover {
   color: #111;
+}
+
+.about_wrapper {
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+  overflow: hidden;
+}
+
+/******************************************************************************\
+	ABOUT TOP
+\******************************************************************************/
+#about_top_box {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+#about_top_box img {
+  width: 100%;
+  border: 5px solid white;
+}
+
+#about_top_box p {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  text-indent: 20px;
+  margin: 10px 0;
+  color: #444;
+  text-align: justify;
+}
+
+#about_top_box a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#about_top_box a:hover {
+  text-decoration: underline;
+}
+
+/******************************************************************************\
+	ABOUT CELEBS
+\******************************************************************************/
+#about_celebs {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  overflow: hidden;
+}
+
+.about_celeb_wrap {
+  width: 100%;
+  display: block;
+}
+
+.about_celeb_wrap img {
+  width: 100%;
+  border: 3px solid white;
+}
+
+.about_celeb_wrap p {
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-size: 10px;
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 10px;
+  text-align: right;
+}
+
+/******************************************************************************\
+	ABOUT MID
+\******************************************************************************/
+#about_mid_box {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  overflow: hidden;
+}
+
+#about_mid_box p {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  text-indent: 20px;
+  margin: 10px 0;
+  color: #444;
+  text-align: justify;
+}
+
+#about_mid_box a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#about_mid_box a:hover {
+  text-decoration: underline;
+}
+
+/******************************************************************************\
+	ABOUT CLIPS
+\******************************************************************************/
+#about_clips_wrap {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+  overflow: hidden;
+}
+
+#about_clips_wrap img {
+  float: left;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+/******************************************************************************\
+	ABOUT BOTTOM
+\******************************************************************************/
+#about_bot_box {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  overflow: hidden;
+}
+
+#about_bot_box p {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  text-indent: 20px;
+  margin: 10px 0;
+  color: #444;
+}
+
+#about_bot_box a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#about_bot_box a:hover {
+  text-decoration: underline;
+}
+
+/******************************************************************************\
+	ABOUT CLIENTS
+\******************************************************************************/
+#about_clients_box {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  overflow: hidden;
+}
+
+.about_clients_header {
+  font-size: 34px;
+  font-size: 3.4rem;
+  color: #333;
+  font-weight: bold;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  display: block;
+  width: 90%;
+  text-align: right;
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+}
+
+.about_header_client_small {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+#about_clients_box p {
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  margin: 10px 0;
+  color: #444;
+  float: left;
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+#about_clients_box a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+#about_clients_box a:hover {
+  text-decoration: underline;
+}
+
+.embed-box {
+  position: relative;
+  padding-bottom: 62.25%;
+  /* ratio for youtube embed */
+  padding-top: 30px;
+  height: auto;
+  overflow: hidden;
+}
+
+.embed-box {
+  color: white !important;
+}
+
+.embed-box iframe,
+.embed-box object,
+.embed-box embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.issuuembed span {
+  display: none !important;
+}
+
+.issuu-isrendered span {
+  display: none !important;
 }

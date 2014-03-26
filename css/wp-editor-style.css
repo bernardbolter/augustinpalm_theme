@@ -61,6 +61,22 @@ input, textarea {
   font-style: normal;
   font-stretch: normal;
 }
+@font-face {
+  font-family: "news_cyclebold";
+  src: url(font-path("newscycle-bold-webfont.eot"));
+  src: url(font-path("newscycle-bold-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-bold-webfont.woff")) format("woff"), url(font-path("newscycle-bold-webfont.ttf")) format("truetype"), url(font-path("newscycle-bold-webfont.svg#news_cyclebold")) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "news_cycleregular";
+  src: url(font-path("newscycle-regular-webfont.eot"));
+  src: url(font-path("newscycle-regular-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-regular-webfont.woff")) format("woff"), url(font-path("newscycle-regular-webfont.ttf")) format("truetype"), url(font-path("newscycle-regular-webfont.svg#news_cycleregular")) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
 /******************************************************************************\
     Font calculation mixins
 \******************************************************************************/
