@@ -26,3 +26,26 @@
 .issuu-isrendered span {
 	display: none !important;
 }
+
+.single_description {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: #eee;
+}
+
+.single_description p {
+	@include font-size(2);
+	font-family: $base-font;
+	padding: 15px 3% 10px;
+	text-align: right;
+	line-height: 22px;
+	color: #555;
+	margin: 0;
+}
+
+
+
+
+

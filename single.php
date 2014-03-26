@@ -10,6 +10,9 @@
 .issuuembed span {display:none !important;}
 </style>
 </div>
+<div class="single_description">
+ 	<p><?php echo get_post_meta($post->ID, 'Description', true); ?></p>
+</div>
 
 <?php endwhile; ?>
 <?php endif; ?>

@@ -4140,3 +4140,65 @@ article:after {
 .issuu-isrendered span {
   display: none !important;
 }
+
+.single_description {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: #eee;
+}
+
+.single_description p {
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  padding: 15px 3% 10px;
+  text-align: right;
+  line-height: 22px;
+  color: #555;
+  margin: 0;
+}
+
+.cat_loop_wrap {
+  width: 100%;
+  margin: 5% 0;
+  display: block;
+  overflow: hidden;
+}
+
+.cat_loop_list li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+  width: 250px;
+}
+
+.cat_loop_list a {
+  display: inline-block;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.cat_loop_list a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.cat_loop_text_box {
+  width: 250px;
+  padding: 10px;
+  background: #fff;
+}
+
+.cat_loop_text_box h2 {
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-align: right;
+  color: #666;
+  margin: 5px 0;
+}

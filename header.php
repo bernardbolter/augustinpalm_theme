@@ -16,6 +16,7 @@
 		?></title>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link href='http://fonts.googleapis.com/css?family=Buenard:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Tinos:400,700' rel='stylesheet' type='text/css'>
 		<script src="<?php bloginfo( 'template_url' ); ?>/js/html5shiv.js"></script>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
