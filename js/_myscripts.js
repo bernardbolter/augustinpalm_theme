@@ -52,3 +52,37 @@ $(document).ready( function() {
     speed: 3000
     });
 });
+$(document).ready( function() {
+    var $container = $('#cat_loop_list');
+    // initialize
+    $container.masonry({
+      columnWidth: 270,
+      itemSelector: '.item'
+    });
+});
+
+$(document).ready( function(){
+
+    $('#articles_nav').click( function(event){
+        event.stopPropagation();
+        $('#drop').toggle();
+    });
+
+    $(document).click( function(){
+        $('#articles_drop').hide();
+    });
+
+});
+
+$(document).ready( function(){
+
+    $('#info_nav').click( function(event){
+        event.stopPropagation();
+        $('#drop').toggle();
+    });
+
+    $(document).click( function(){
+        $('#info_drop').hide();
+    });
+
+});

@@ -2,7 +2,7 @@
 
 	<nav id="navigation" role="navigation" class="clearfix">
 		<div id="nav_left">
-			<p id="erik_text">ERIK<span class="hide_erik"> AUGUSTIN PALM</span>.</p>
+			<a id="erik_text" href="<?php echo home_url( '/' ); ?>">ERIK<span class="hide_erik"> AUGUSTIN PALM</span>.</a>
 			<ul>
 				<li><a href="#" id="articles_nav">ARTICLES</a>
 					<ul id="articles_drop">
@@ -14,7 +14,7 @@
 						<li class="nav_food"><a href="<?php echo home_url( '/' ); ?>food-travel"><i class="fa fa-plus awe_font"></i>FOOD & TRAVEL</a></li>
 						<li class="nav_lit"><a href="<?php echo home_url( '/' ); ?>literature"><i class="fa fa-plus awe_font"></i>LITERATURE</a></li>
 						<li class="nav_tech"><a href="<?php echo home_url( '/' ); ?>it-media-tech"><i class="fa fa-plus awe_font"></i>IT, MEDIA & TECH</a></li>
-						<li class="nav_cover"><a href="<?php echo home_url( '/' ); ?>"><i class="fa fa-plus awe_font"></i>COVER STORIES</a></li>
+						<li class="nav_cover"><a href="<?php echo home_url( '/' ); ?>cover-stories"><i class="fa fa-plus awe_font"></i>COVER STORIES</a></li>
 					</ul> <!-- articles_drop -->
 				</li>
 			</ul>
@@ -25,8 +25,8 @@
 				<li><a href="#" id="info_nav">INFO</a>
 					<ul id="info_drop">
 						<li class="nav_about"><a href="<?php echo home_url( '/' ); ?>about">ABOUT<i class="fa fa-plus awe_font"></i></a></li>
-						<li class="nav_photo"><a href="<?php echo home_url( '/' ); ?>photography">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
-						<li class="nav_other"><a href="<?php echo home_url( '/' ); ?>other-projects">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
+						<li class="nav_photo"><a href="#">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
+						<li class="nav_other"><a href="#">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
 						<li id="contact_but" class="nav_contact"><a href="#contact">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
 					</ul> <!-- info_drop -->
 				</li>

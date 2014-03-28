@@ -20,6 +20,7 @@
 	margin: 0 0 0 20%;
 	display: none;
 	float: left;
+	text-decoration: none;
 	padding-top: 7px;
 
 	@include respond-to(medium) {
@@ -96,7 +97,7 @@
 
 #nav_left ul {
 	position: relative; 
-	z-index: 597; 
+	z-index: 597;
 }
 
 #nav_left ul li.hover,

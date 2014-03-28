@@ -88,7 +88,6 @@ add_action( 'init', 'augustinpalm_theme_editor_style' );
 function augustinpalm_theme_enqueue_scripts() {
 	wp_enqueue_style( 'augustinpalm_theme-styles', get_stylesheet_uri(), array(), '1.0' );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'default-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), '1.0', true );
 	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 }
 add_action( 'wp_enqueue_scripts', 'augustinpalm_theme_enqueue_scripts' );

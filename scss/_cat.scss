@@ -1,24 +1,43 @@
-.cat_loop_wrap {
-	width: 100%;
-	margin: 5% 0;
+#cat_loop_wrap {
+	width: 270px;
+	margin: 2% auto;
 	display: block;
 	overflow: hidden;
+
+	@media (min-width: 556px) {
+		width: 556px;
+	}
+
+	@media (min-width: 825px) {
+		width: 825px;
+	}
+
+	@media (min-width: 1095px) {
+		width: 1095px;
+	}
+
+	@media (min-width: 1365px) {
+		width: 1365px;
+	}
 }
 
-.cat_loop_list li {
-	list-style: none;
+.item {
 	float: left;
 	margin: 10px;
 	width: 250px;
 }
 
-.cat_loop_list a {
+.item img {
+	box-shadow: 2px 2px 2px #777;
+}
+
+.item a {
 	display: inline-block;
 	@include opacity(0.8);
 	@include transition (all 0.5s ease);
 }
 
-.cat_loop_list a:hover {
+.item a:hover {
 	@include opacity(1);
 }
 
@@ -31,7 +50,55 @@
 .cat_loop_text_box h2 {
 	font-family: $base-font;
 	@include font-size(1.8);
-	text-align: right;
+	text-align: left;
 	color: #666;
 	margin: 5px 0;
+}
+
+.cat_loop_text_box p {
+	font-family: $body-font;
+	@include font-size(1);
+	color: #888;
+	margin: 0;
+}
+
+.cat_loop_text_box h3 {
+	font-family: $base-font;
+	color: #eee;
+	@include font-size(1.2);
+	padding: 6px 0 3px;
+	text-align: center;
+	margin: 12px 0 0 0;
+}
+
+.cover_music {
+	background: $music;
+}
+
+.cover_film {
+	background: $film;
+}
+
+.cover_tv {
+	background: $tv;
+}
+
+.cover_art {
+	background: $art;
+}
+
+.cover_society {
+	background: $society;
+}
+
+.cover_food {
+	background: $food;
+}
+
+.cover_lit {
+	background: $lit;
+}
+
+.cover_tech {
+	background: $tech;
 }

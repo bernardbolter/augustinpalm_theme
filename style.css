@@ -2351,18 +2351,22 @@ p ~ h1 {
   height: 25px;
 }
 
-.dark_bread {
+#bread_wrap p {
   width: 20%;
   float: left;
-  background: #09101b;
-  color: #ddd;
-  font-family: 'DINNeuzeitGroteskStd-Light', sans-serif;
+  color: #eee;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
   font-size: 9px;
+  font-size: 0.9rem;
   line-height: 14px;
   letter-spacing: 0.13em;
   margin: 0;
   text-align: right;
   padding: 2px 10px 0 0;
+}
+
+.dark_bread {
+  background: #09101b;
 }
 
 .sticky {
@@ -2647,6 +2651,7 @@ p ~ h1 {
   margin: 0 0 0 20%;
   display: none;
   float: left;
+  text-decoration: none;
   padding-top: 7px;
 }
 @media only screen and (min-width: 481px) {
@@ -3426,12 +3431,11 @@ article:after {
 
 #bottom_nav ul li a {
   font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
-  font-size: 14px;
-  font-size: 1.4rem;
-  float: left;
-  color: #eee;
+  font-size: 15px;
+  font-size: 1.5rem;
+  text-align: right;
   margin: 0;
-  padding: 5px 0 3px 10%;
+  padding: 6px;
   width: 100%;
   line-height: 10px;
   text-decoration: none;
@@ -3441,25 +3445,32 @@ article:after {
 }
 @media only screen and (min-width: 481px) {
   #bottom_nav ul li a {
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 769px) {
   #bottom_nav ul li a {
     font-size: 10px;
     font-size: 1rem;
+    padding: 4px;
   }
+}
+
+#bottom_nav ul li a:hover {
+  color: #eee;
 }
 
 .bot_music a {
   background: #17273e;
+  color: #64748a;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .bot_music a:hover {
@@ -3474,6 +3485,7 @@ article:after {
 
 .bot_film a {
   background: #1c3140;
+  color: #687e8c;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3494,6 +3506,7 @@ article:after {
 
 .bot_tv a {
   background: #334b51;
+  color: #80989d;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3514,6 +3527,7 @@ article:after {
 
 .bot_art a {
   background: #617466;
+  color: #adc0b3;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3534,6 +3548,7 @@ article:after {
 
 .bot_society a {
   background: #233335;
+  color: #6f7f82;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3554,6 +3569,7 @@ article:after {
 
 .bot_food a {
   background: #485e51;
+  color: #94ab9d;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3574,6 +3590,7 @@ article:after {
 
 .bot_lit a {
   background: #827c62;
+  color: #cec9af;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3594,6 +3611,7 @@ article:after {
 
 .bot_tech a {
   background: #70483e;
+  color: #bd958b;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3614,6 +3632,7 @@ article:after {
 
 .bot_cover a {
   background: #060b12;
+  color: #52575f;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3634,6 +3653,7 @@ article:after {
 
 .bot_about a {
   background: #24262c;
+  color: #707378;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3654,6 +3674,7 @@ article:after {
 
 .bot_photo a {
   background: #484b51;
+  color: #95989e;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3674,6 +3695,7 @@ article:after {
 
 .bot_other a {
   background: #858074;
+  color: #d1ccc1;
   opacity: 0.85;
   filter: alpha(opacity=85);
   display: block;
@@ -3697,7 +3719,8 @@ article:after {
 #footer {
   width: 100%;
   background: #09101b;
-  padding: 20px 0;
+  padding: 0;
+  overflow: hidden;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -3705,18 +3728,60 @@ article:after {
 @media only screen and (min-width: 481px) {
   #footer {
     background: #030303 url(gfx/bottom_portrait.jpg) no-repeat 0 0;
+    padding: 30px 0 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #footer {
+    padding: 40px 0 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #footer {
+    padding: 50px 0 0;
+  }
+}
+
+#contact_wrap {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media only screen and (min-width: 481px) {
+  #contact_wrap {
+    width: 340px;
+    float: right;
+    margin: 0 5% 0 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.45);
+  }
+}
+@media only screen and (min-width: 769px) {
+  #contact_wrap {
+    margin: 0 10% 0 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #contact_wrap {
+    margin: 0 14% 0 0;
   }
 }
 
 #contact_box {
-  width: 300px;
+  width: 100%;
   margin: 20px auto;
   display: block;
   overflow: hidden;
+  background: transparent;
+  float: right;
 }
 @media only screen and (min-width: 481px) {
   #contact_box {
-    margin: 20px 0 0 40%;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -3725,33 +3790,26 @@ article:after {
   }
 }
 
-.contact_plus {
-  width: 100px;
-  float: left;
-  margin: 0;
-  font-size: 60px;
-  font-size: 6rem;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-}
-
 .contact_name_box {
-  width: 200px;
-  float: left;
+  width: 100%;
   display: block;
 }
 
 .contact_name_box p {
   color: #ddd;
-  text-align: right;
   margin: 3px 0;
   letter-spacing: 0.2em;
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .contact_icons {
-  width: 100%;
-  float: left;
+  width: 116px;
   display: block;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .contact_icons li {
@@ -3780,16 +3838,6 @@ article:after {
   width: 300px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 481px) {
-  .contact_form {
-    margin: 0 0 0 40%;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .contact_form {
-    margin: 0 0 0 50%;
-  }
-}
 
 .contact_form p {
   font-size: 10px;
@@ -3815,9 +3863,27 @@ article:after {
   filter: alpha(opacity=90);
 }
 
+.footfoot {
+  width: 100%;
+  display: block;
+  margin: 150px auto 50px;
+  font-family: "Tinos", serif;
+  font-size: 7px;
+  font-size: 0.7rem;
+  color: #ccc;
+  text-align: center;
+  letter-spacing: 0.2em;
+  float: right;
+}
+@media only screen and (min-width: 481px) {
+  .footfoot {
+    letter-spacing: 0.5em;
+  }
+}
+
 #short_bio_box {
   width: 100%;
-  margin: 0;
+  margin: 20px 0 0 0;
   display: block;
   color: #333;
   -webkit-transition: all 0.5s ease;
@@ -3829,19 +3895,19 @@ article:after {
     background: #fff;
     overflow: hidden;
     width: 80%;
-    margin: 0 auto 500px;
+    margin: 20px auto;
   }
 }
 @media only screen and (min-width: 769px) {
   #short_bio_box {
     width: 50%;
-    margin: 0 0 500px 35%;
+    margin: 20px 0 10px 35%;
   }
 }
 @media only screen and (min-width: 1025px) {
   #short_bio_box {
     width: 40%;
-    margin: 0 0 500px 50%;
+    margin: 20px 0 10px 50%;
   }
 }
 
@@ -3870,8 +3936,7 @@ article:after {
 
 .short_bio_plus {
   width: 100%;
-  display: block;
-  margin: 0;
+  display: none;
   text-align: left;
 }
 @media only screen and (min-width: 481px) {
@@ -3879,6 +3944,7 @@ article:after {
     margin: 20px 20px 0 20px;
     float: left;
     width: 36px;
+    display: block;
   }
 }
 
@@ -4154,27 +4220,50 @@ article:after {
   font-size: 2rem;
   font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
   padding: 15px 3% 10px;
-  text-align: right;
+  text-align: center;
   line-height: 22px;
   color: #555;
   margin: 0;
 }
 
-.cat_loop_wrap {
-  width: 100%;
-  margin: 5% 0;
+#cat_loop_wrap {
+  width: 270px;
+  margin: 2% auto;
   display: block;
   overflow: hidden;
 }
+@media (min-width: 556px) {
+  #cat_loop_wrap {
+    width: 556px;
+  }
+}
+@media (min-width: 825px) {
+  #cat_loop_wrap {
+    width: 825px;
+  }
+}
+@media (min-width: 1095px) {
+  #cat_loop_wrap {
+    width: 1095px;
+  }
+}
+@media (min-width: 1365px) {
+  #cat_loop_wrap {
+    width: 1365px;
+  }
+}
 
-.cat_loop_list li {
-  list-style: none;
+.item {
   float: left;
   margin: 10px;
   width: 250px;
 }
 
-.cat_loop_list a {
+.item img {
+  box-shadow: 2px 2px 2px #777;
+}
+
+.item a {
   display: inline-block;
   opacity: 0.8;
   filter: alpha(opacity=80);
@@ -4183,7 +4272,7 @@ article:after {
   transition: all 0.5s ease;
 }
 
-.cat_loop_list a:hover {
+.item a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -4198,7 +4287,57 @@ article:after {
   font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  text-align: right;
+  text-align: left;
   color: #666;
   margin: 5px 0;
+}
+
+.cat_loop_text_box p {
+  font-family: "Tinos", serif;
+  font-size: 10px;
+  font-size: 1rem;
+  color: #888;
+  margin: 0;
+}
+
+.cat_loop_text_box h3 {
+  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  color: #eee;
+  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 6px 0 3px;
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+.cover_music {
+  background: #223959;
+}
+
+.cover_film {
+  background: #28475c;
+}
+
+.cover_tv {
+  background: #4a6c74;
+}
+
+.cover_art {
+  background: #8ba693;
+}
+
+.cover_society {
+  background: #32494d;
+}
+
+.cover_food {
+  background: #678774;
+}
+
+.cover_lit {
+  background: #bab28d;
+}
+
+.cover_tech {
+  background: #a1685a;
 }

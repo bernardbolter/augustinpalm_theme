@@ -1,6 +1,6 @@
 #short_bio_box {
 	width: 100%;
-	margin: 0;
+	margin: 20px 0 0 0;
 	display: block;
 	color: #333;
 	@include transition (all 0.5s ease);
@@ -9,17 +9,17 @@
 		background: #fff;
 		overflow: hidden;
 		width: 80%;
-		margin: 0 auto 500px;
+		margin: 20px auto;
 	}
 
 	@include respond-to(large) {
 		width: 50%;
-		margin: 0 0 500px 35%;
+		margin: 20px 0 10px 35%;
 	}
 
 	@include respond-to(xlarge) {
 		width: 40%;
-		margin: 0 0 500px 50%;
+		margin: 20px 0 10px 50%;
 	}
 }
 
@@ -46,14 +46,14 @@
 
 .short_bio_plus {
 	width: 100%;
-	display: block;
-	margin: 0;
+	display: none;
 	text-align: left;
 
 	@include respond-to(medium) {
 		margin: 20px 20px 0 20px;
 		float: left;
-		width: 36px;  
+		width: 36px;
+		display: block; 
 	}
 }
 
