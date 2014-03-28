@@ -27,6 +27,9 @@
 		elseif ( is_page( '8' ) ){
 			echo "<p class=\"dark_bread\">COVER STORIES</p>";
 		}
+		elseif ( is_page( '11' ) ){
+			echo "<p class=\"cover_about\">ABOUT</p>";
+		}
 		else {
 
 		}

@@ -2178,26 +2178,15 @@ input, textarea {
 	Settings
 \******************************************************************************/
 @font-face {
+  font-family: 'DIN30640StdNeuzeitGroteskLight';
+  src: url("fonts/dinneuzeitgroteskstd-light.eot");
+  src: url("fonts/dinneuzeitgroteskstd-light.eot") format("embedded-opentype"), url("fonts/dinneuzeitgroteskstd-light.woff") format("woff"), url("fonts/dinneuzeitgroteskstd-light.ttf") format("truetype"), url("fonts/dinneuzeitgroteskstd-light.svg#DIN30640StdNeuzeitGroteskLight") format("svg");
+}
+@font-face {
   font-family: "DINNeuzeitGroteskStd-Light";
   src: url(font-path("dinneuzeitgroteskstd-light-webfont.eot"));
   src: url(font-path("dinneuzeitgroteskstd-light-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("dinneuzeitgroteskstd-light-webfont.woff")) format("woff"), url(font-path("dinneuzeitgroteskstd-light-webfont.ttf")) format("truetype"), url(font-path("dinneuzeitgroteskstd-light-webfont.svg#DINNeuzeitGroteskStd-Light")) format("svg");
   font-weight: 200;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "news_cyclebold";
-  src: url(font-path("newscycle-bold-webfont.eot"));
-  src: url(font-path("newscycle-bold-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-bold-webfont.woff")) format("woff"), url(font-path("newscycle-bold-webfont.ttf")) format("truetype"), url(font-path("newscycle-bold-webfont.svg#news_cyclebold")) format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "news_cycleregular";
-  src: url(font-path("newscycle-regular-webfont.eot"));
-  src: url(font-path("newscycle-regular-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-regular-webfont.woff")) format("woff"), url(font-path("newscycle-regular-webfont.ttf")) format("truetype"), url(font-path("newscycle-regular-webfont.svg#news_cycleregular")) format("svg");
-  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
 }
@@ -2212,7 +2201,7 @@ html {
 	Standard font styling
 \******************************************************************************/
 body {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
@@ -2257,7 +2246,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -2355,7 +2344,7 @@ p ~ h1 {
   width: 20%;
   float: left;
   color: #eee;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 9px;
   font-size: 0.9rem;
   line-height: 14px;
@@ -2577,12 +2566,12 @@ p ~ h1 {
 }
 @media only screen and (min-width: 769px) {
   #title_text_wrap {
-    padding: 25px 0 0 0;
+    padding: 1px 0 0 0;
   }
 }
 
 #title_text {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   color: #ddd;
   font-weight: 200;
   text-decoration: none;
@@ -2594,13 +2583,15 @@ p ~ h1 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  line-height: 48px;
 }
 @media only screen and (min-width: 481px) {
   #title_text {
     letter-spacing: 0.05em;
     font-size: 40px;
     font-size: 4rem;
-    margin: 10px 0 0 0;
+    padding: 30px 0 0 0;
+    line-height: auto;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -2608,7 +2599,7 @@ p ~ h1 {
     letter-spacing: 0.05em;
     font-size: 56px;
     font-size: 5.6rem;
-    margin: 20px 0 0 0;
+    padding: 60px 0 0 0;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -2616,7 +2607,7 @@ p ~ h1 {
     letter-spacing: 0.1em;
     font-size: 66px;
     font-size: 6.6rem;
-    margin: 20px 0 0 0;
+    padding: 60px 0 0 0;
   }
 }
 
@@ -2642,7 +2633,7 @@ p ~ h1 {
 #erik_text {
   color: #eee;
   text-decoration: none;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 20px;
   font-size: 2rem;
   line-height: 23px;
@@ -2714,7 +2705,7 @@ p ~ h1 {
 #nav_left ul li a {
   color: #eee;
   text-decoration: none;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 23px;
@@ -2994,7 +2985,7 @@ p ~ h1 {
 #nav_right ul li a {
   color: #eee;
   text-decoration: none;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 23px;
@@ -3430,7 +3421,7 @@ article:after {
 }
 
 #bottom_nav ul li a {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 15px;
   font-size: 1.5rem;
   text-align: right;
@@ -3799,7 +3790,7 @@ article:after {
   color: #ddd;
   margin: 3px 0;
   letter-spacing: 0.2em;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   text-align: center;
@@ -3979,8 +3970,8 @@ article:after {
 }
 
 .about_wrapper {
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 0 auto 20px;
   display: block;
   overflow: hidden;
 }
@@ -3989,14 +3980,39 @@ article:after {
 	ABOUT TOP
 \******************************************************************************/
 #about_top_box {
-  width: 100%;
+  width: 90%;
   display: block;
   overflow: hidden;
+  margin: 5px auto;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+@media only screen and (min-width: 481px) {
+  #about_top_box {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #about_top_box {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #about_top_box {
+    width: 75%;
+  }
 }
 
 #about_top_box img {
   width: 100%;
   border: 5px solid white;
+}
+@media only screen and (min-width: 769px) {
+  #about_top_box img {
+    max-width: 400px;
+    margin: 20px;
+    float: right;
+  }
 }
 
 #about_top_box p {
@@ -4006,33 +4022,92 @@ article:after {
   line-height: 22px;
   text-indent: 20px;
   margin: 10px 0;
-  color: #444;
-  text-align: justify;
+  color: #666;
+}
+
+@media only screen and (min-width: 769px) {
+  .about_pad {
+    margin: 60px 0 0 !important;
+  }
 }
 
 #about_top_box a {
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: #444;
 }
 
 #about_top_box a:hover {
   text-decoration: underline;
 }
 
+#about_top_box h4 {
+  text-align: center;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
+  text-indent: 0;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 16px;
+}
+
 /******************************************************************************\
 	ABOUT CELEBS
 \******************************************************************************/
 #about_celebs {
-  width: 80%;
-  margin: 10px auto;
+  width: 320px;
   display: block;
   overflow: hidden;
+  margin: 5px auto 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media (min-width: 420px) {
+  #about_celebs {
+    width: 420px;
+  }
+}
+@media (min-width: 630px) {
+  #about_celebs {
+    width: 630px;
+  }
+}
+@media (min-width: 856px) {
+  #about_celebs {
+    width: 856px;
+  }
+}
+@media (min-width: 1080px) {
+  #about_celebs {
+    width: 1080px;
+  }
 }
 
 .about_celeb_wrap {
-  width: 100%;
+  width: 150px;
   display: block;
+  float: left;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media (min-width: 420px) {
+  .about_celeb_wrap {
+    width: 200px;
+  }
+}
+@media (min-width: 856px) {
+  .about_celeb_wrap {
+    margin: 5px 7px;
+  }
+}
+@media (min-width: 1040px) {
+  .about_celeb_wrap {
+    width: 250px;
+    margin: 10px;
+  }
 }
 
 .about_celeb_wrap img {
@@ -4041,12 +4116,12 @@ article:after {
 }
 
 .about_celeb_wrap p {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 10px;
   font-size: 1rem;
   color: #666;
-  margin: 0 0 10px;
   text-align: right;
+  margin: 0 5px 0 0;
 }
 
 /******************************************************************************\
@@ -4058,6 +4133,21 @@ article:after {
   display: block;
   overflow: hidden;
 }
+@media only screen and (min-width: 481px) {
+  #about_mid_box {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #about_mid_box {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #about_mid_box {
+    width: 75%;
+  }
+}
 
 #about_mid_box p {
   font-family: "Tinos", serif;
@@ -4066,14 +4156,26 @@ article:after {
   line-height: 22px;
   text-indent: 20px;
   margin: 10px 0;
+  color: #666;
+}
+
+#about_mid_box h5 {
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 18px;
+  margin: 0 0 20px;
+  padding: 5px 0;
   color: #444;
-  text-align: justify;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #about_mid_box a {
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: #444;
 }
 
 #about_mid_box a:hover {
@@ -4088,6 +4190,7 @@ article:after {
   margin: 10px auto;
   display: block;
   overflow: hidden;
+  display: none;
 }
 
 #about_clips_wrap img {
@@ -4105,6 +4208,21 @@ article:after {
   display: block;
   overflow: hidden;
 }
+@media only screen and (min-width: 481px) {
+  #about_bot_box {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #about_bot_box {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #about_bot_box {
+    width: 75%;
+  }
+}
 
 #about_bot_box p {
   font-family: "Tinos", serif;
@@ -4113,13 +4231,24 @@ article:after {
   line-height: 22px;
   text-indent: 20px;
   margin: 10px 0;
+  color: #666;
+}
+
+#about_bot_box h4 {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  text-indent: 20px;
+  margin: 10px 0;
   color: #444;
+  text-align: center;
 }
 
 #about_bot_box a {
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: #444;
 }
 
 #about_bot_box a:hover {
@@ -4135,13 +4264,28 @@ article:after {
   display: block;
   overflow: hidden;
 }
+@media only screen and (min-width: 481px) {
+  #about_clients_box {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #about_clients_box {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #about_clients_box {
+    width: 75%;
+  }
+}
 
 .about_clients_header {
   font-size: 34px;
   font-size: 3.4rem;
   color: #333;
   font-weight: bold;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   display: block;
   width: 90%;
   text-align: right;
@@ -4155,15 +4299,14 @@ article:after {
 }
 
 #about_clients_box p {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 22px;
-  margin: 10px 0;
   color: #444;
   float: left;
   display: inline-block;
-  margin: 10px 20px;
+  margin: 5px 15px;
 }
 
 #about_clients_box a {
@@ -4218,7 +4361,7 @@ article:after {
 .single_description p {
   font-size: 20px;
   font-size: 2rem;
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   padding: 15px 3% 10px;
   text-align: center;
   line-height: 22px;
@@ -4284,12 +4427,14 @@ article:after {
 }
 
 .cat_loop_text_box h2 {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   text-align: left;
   color: #666;
   margin: 5px 0;
+  font-weight: 200;
+  letter-spacing: 0.05em;
 }
 
 .cat_loop_text_box p {
@@ -4301,7 +4446,7 @@ article:after {
 }
 
 .cat_loop_text_box h3 {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   color: #eee;
   font-size: 12px;
   font-size: 1.2rem;
@@ -4340,4 +4485,8 @@ article:after {
 
 .cover_tech {
   background: #a1685a;
+}
+
+.cover_about {
+  background: #34373f;
 }

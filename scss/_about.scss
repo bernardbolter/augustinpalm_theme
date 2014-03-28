@@ -1,6 +1,6 @@
 .about_wrapper {
-	width: 90%;
-	margin: 20px auto;
+	width: 100%;
+	margin: 0 auto 20px;
 	display: block;
 	overflow: hidden;
 }
@@ -10,14 +10,35 @@
 \******************************************************************************/
 
 #about_top_box {
-	width: 100%;
+	width: 90%;
 	display: block;
 	overflow: hidden;
+	margin: 5px auto;
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+
+	@include respond-to(medium) {
+		width: 85%;
+	}
+
+	@include respond-to(large) {
+		width: 80%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 75%;
+	}
 }
 
 #about_top_box img {
 	width: 100%;
 	border: 5px solid white;
+
+	@include respond-to(large) {
+		max-width: 400px;
+		margin: 20px;
+		float: right;
+	}
 }
 
 #about_top_box p {
@@ -26,18 +47,32 @@
 	line-height: 22px;
 	text-indent: 20px;
 	margin: 10px 0;
-	color: #444;
-	text-align: justify;
+	color: #666;
+}
+
+.about_pad {
+	@include respond-to(large) {
+		margin: 60px 0 0 !important;
+	}
 }
 
 #about_top_box a {
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
+	color: #444;
 }
 
 #about_top_box a:hover {
 	text-decoration: underline;
+}
+
+#about_top_box h4 {
+	text-align: center;
+	font-family: $base-font;
+	text-indent: 0;
+	@include font-size(1.2);
+	color: #666;
+	line-height: 16px;
 }
 
 /******************************************************************************\
@@ -45,15 +80,48 @@
 \******************************************************************************/
 
 #about_celebs {
-	width: 80%;
-	margin: 10px auto;
+	width: 320px;
 	display: block;
 	overflow: hidden;
+	margin: 5px auto 0;
+	@include transition (all 0.5s ease);
+
+	@media (min-width: 420px) {
+		width: 420px;
+	}
+
+	@media (min-width: 630px) {
+		width: 630px;
+	}
+
+	@media (min-width: 856px) {
+		width: 856px;
+	}
+
+	@media (min-width: 1080px) {
+		width: 1080px;
+	}
 }
 
 .about_celeb_wrap {
-	width: 100%;
+	width: 150px;
 	display: block;
+	float: left;
+	margin: 5px;
+	@include transition (all 0.5s ease);
+
+	@media (min-width: 420px) {
+		width: 200px;
+	}
+
+	@media (min-width: 856px) {
+		margin: 5px 7px;
+	}
+
+	@media (min-width: 1040px) {
+		width: 250px;
+		margin: 10px;
+	}
 }
 
 .about_celeb_wrap img {
@@ -65,8 +133,8 @@
 	font-family: $base-font;
 	@include font-size(1);
 	color: #666;
-	margin: 0 0 10px;
 	text-align: right;
+	margin: 0 5px 0 0;
 }
 
 /******************************************************************************\
@@ -78,6 +146,18 @@
 	margin: 10px auto;
 	display: block;
 	overflow: hidden;
+
+	@include respond-to(medium) {
+		width: 85%;
+	}
+
+	@include respond-to(large) {
+		width: 80%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 75%;
+	}
 }
 
 #about_mid_box p {
@@ -86,14 +166,25 @@
 	line-height: 22px;
 	text-indent: 20px;
 	margin: 10px 0;
+	color: #666;
+}
+
+#about_mid_box h5 {
+	font-family: $base-font;
+	@include font-size(1.2);
+	line-height: 18px;
+	margin: 0 0 20px;
+	padding: 5px 0;
 	color: #444;
-	text-align: justify;
+	text-align: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 #about_mid_box a {
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
+	color: #444;
 }
 
 #about_mid_box a:hover {
@@ -109,6 +200,7 @@
 	margin: 10px auto;
 	display: block;
 	overflow: hidden;
+	display: none;
 }
 
 #about_clips_wrap img {
@@ -122,10 +214,22 @@
 \******************************************************************************/
 
 #about_bot_box {
-		width: 90%;
+	width: 90%;
 	margin: 10px auto;
 	display: block;
 	overflow: hidden;
+
+	@include respond-to(medium) {
+		width: 85%;
+	}
+
+	@include respond-to(large) {
+		width: 80%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 75%;
+	}
 }
 
 #about_bot_box p {
@@ -134,13 +238,23 @@
 	line-height: 22px;
 	text-indent: 20px;
 	margin: 10px 0;
+	color: #666;
+}
+
+#about_bot_box h4 {
+	font-family: $body-font;
+	@include font-size(1.8);
+	line-height: 22px;
+	text-indent: 20px;
+	margin: 10px 0;
 	color: #444;
+	text-align: center;
 }
 
 #about_bot_box a {
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
+	color: #444;
 }
 
 #about_bot_box a:hover {
@@ -156,6 +270,18 @@
 	margin: 10px auto;
 	display: block;
 	overflow: hidden;
+
+	@include respond-to(medium) {
+		width: 85%;
+	}
+
+	@include respond-to(large) {
+		width: 80%;
+	}
+
+	@include respond-to(xlarge) {
+		width: 75%;
+	}
 }
 
 .about_clients_header {
@@ -176,13 +302,12 @@
 
 #about_clients_box p {
 	font-family: $base-font;
-	@include font-size(1.8);
+	@include font-size(1.2);
 	line-height: 22px;
-	margin: 10px 0;
 	color: #444;
 	float: left;
 	display: inline-block;
-	margin: 10px 20px;
+	margin: 5px 15px;
 }
 
 #about_clients_box a {

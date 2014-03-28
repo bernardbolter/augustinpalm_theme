@@ -1,3 +1,48 @@
+/*
+	By Osvaldas Valutis, www.osvaldas.info
+	Available for use under the MIT License
+*/
+
+
+
+;(function( $, window, document, undefined )
+{
+	$.fn.doubleTapToGo = function( params )
+	{
+		if( !( 'ontouchstart' in window ) &&
+			!navigator.msMaxTouchPoints &&
+			!navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
+
+		this.each( function()
+		{
+			var curItem = false;
+
+			$( this ).on( 'click', function( e )
+			{
+				var item = $( this );
+				if( item[ 0 ] != curItem[ 0 ] )
+				{
+					e.preventDefault();
+					curItem = item;
+				}
+			});
+
+			$( document ).on( 'click touchstart MSPointerDown', function( e )
+			{
+				var resetItem = true,
+					parents	  = $( e.target ).parents();
+
+				for( var i = 0; i < parents.length; i++ )
+					if( parents[ i ] == curItem[ 0 ] )
+						resetItem = false;
+
+				if( resetItem )
+					curItem = false;
+			});
+		});
+		return this;
+	};
+})( jQuery, window, document );
 /*!
  * Masonry PACKAGED v3.1.5
  * Cascading grid layout library
@@ -1218,26 +1263,7 @@ $(document).ready( function() {
 
 $(document).ready( function(){
 
-    $('#articles_nav').click( function(event){
-        event.stopPropagation();
-        $('#drop').toggle();
-    });
-
-    $(document).click( function(){
-        $('#articles_drop').hide();
-    });
-
-});
-
-$(document).ready( function(){
-
-    $('#info_nav').click( function(event){
-        event.stopPropagation();
-        $('#drop').toggle();
-    });
-
-    $(document).click( function(){
-        $('#info_drop').hide();
-    });
+    $( '#articles_nav li:has(ul)' ).doubleTapToGo();
+    $( '#info_nav li:has(ul)' ).doubleTapToGo();
 
 });

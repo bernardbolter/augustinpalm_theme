@@ -13,9 +13,10 @@ Template Name: About
 <div class="about_wrapper">
 	<div id="about_top_box" class="clearfix">
 		<img src="<?php echo bloginfo( 'template_url' ); ?>/gfx/erik_about_portrait.jpg" alt="Portrait of Erik Augustin Palm" />
-		<p>Erik Augustin Palm is a Swedish journalist, translator and copywriter currently based in San Francisco, California. He is published in the biggest newspapers and magazines in Sweden, and has written extensively about culture, media, the arts, lifestyle, travel, IT and society in Sweden, America and Japan - the three countries he mainly divides his time between. For years, Erik's focus has been to interview the cultural icons of our time - and to write long feature stories about the cultural phenomenon that affects our lives.</p>
-		<p>Erik only takes on copywriting where there is no risk for conflict with his journalism.</p>
+		<p class="about_pad">Erik Augustin Palm is a Swedish journalist, translator and copywriter currently based in San Francisco, California. He is published in the biggest newspapers and magazines in Sweden, and has written extensively about culture, media, the arts, lifestyle, travel, IT and society in Sweden, America and Japan - the three countries he mainly divides his time between. For years, Erik's focus has been to interview the cultural icons of our time - and to write long feature stories about the cultural phenomenon that affects our lives.</p>
+		<h4>Erik only takes on copywriting where there is no risk for conflict with his journalism.</h4>
 		<p>Erik's education background contains Media, Popular Culture Critique, Art History and Design Studies at <a href="http://www.sfsu.edu">San Francisco State University</a>, a Bachelor's Degree in Film Studies from <a href="http://www.su.se">Stockholm University</a>, Photography Studies at <a href="http://www.sfai.com">San Francisco Art Institute</a>, and Diplomas in Journalism and Writing from the <a href="http://www.jakobsbergsfolkhogskola.se">Swedish trade school Jakobsbergs Folkhögskola</a>.</p>
+		<p>Erik is covering culture, media, the arts and society from all over the US, and commutes from his current base of San Francisco, California, to Los Angeles, to report about the entertainment industry there. Over the years Erik has interviewed many of the heaviest names in Swedish, American and Japanese culture, society and media, for Sweden's biggest newspapers and magazines - as well as for some English language magazines. Erik has also contributed to national Swedish radio <a href="http://sverigesradio.se/p3">channel P3</a>, as a commentator.</p>
 	</div>
 	<div id="about_celebs" class="clearfix">
 		<div class="about_celeb_wrap">
@@ -52,8 +53,7 @@ Template Name: About
 		</div>
 	</div>
 	<div id="about_mid_box" class="clearfix">
-		<p>Erik is covering culture, media, the arts and society from all over the US, and commutes from his current base of San Francisco, California, to Los Angeles, to report about the entertainment industry there. Over the years Erik has interviewed many of the heaviest names in Swedish, American and Japanese culture, society and media, for Sweden's biggest newspapers and magazines - as well as for some English language magazines. Erik has also contributed to national Swedish radio <a href="http://sverigesradio.se/p3">channel P3</a>, as a commentator.</p>
-		<p>For a continuously updated index of Erik's clients, please click on this link. For an index of notable people that Erik has interviewed (in no way complete), please click this link.</p>
+		<h5>For a continuously updated index of Erik's clients, please click on this link. For an index of notable people that Erik has interviewed (in no way complete), please click this link.</h5>
 		<p>Since 2008, Erik's main client as a journalist has been the prestigious and multiple award-winning Swedish morning newspaper <a href="http://www.svd.se">Svenska Dagbladet</a>. The newspaper has been published since 1884, has a circulation of 160 000 print copies and reaches approximately million readers daily, when both online and print readers are counted. Between 2007 and 2009, Erik was also a editorial staff, journalist and film critic at <a href="http://www.nojesguiden.se">Nöjesguiden</a>, Sweden's biggest free entertainment magazine. 
 	</div>
 	<div id="about_clips_wrap">
@@ -65,7 +65,7 @@ Template Name: About
 	<div id="about_bot_box" class="clearfix">
 		<p>Through Svenska Dagbladet, Erik is a holder of a five year Media Visa to the United States. He is a member of <a href="https://www.sjf.se/about">The Swedish Union of Journalists</a>, and is registered for Swedish f-tax (corporate tax) for his company Augustin Media (patented business name).</p>
 		<p>Among the scholarship foundations that Erik has received work and study grants from so far, are <a href="http://www.japanstiftelsen.se">Japanstiftelsen - The Scholarship Foundation for Studies of Japanese Society</a>, <a href="http://www.sjsf.se">The Scandinavia-Japan Sasakawa Foundation</a> and The Swedish Union of Journalists' scholarship for education and skill development.</p>
-		<p>To contact Erik, please fill in the form below, or send an e-mail to: erik@augustinpalm.se</p>
+		<h4>To contact Erik, please fill in the form below, or send an e-mail to: erik@augustinpalm.se</h4>
 	</div>
 	<div id="about_clients_box">
 		<p class="about_clients_header">CLIENTS <span class="about_header_client_small">(IN SELECTION)</span>:</p>

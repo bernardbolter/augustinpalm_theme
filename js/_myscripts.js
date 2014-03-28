@@ -63,26 +63,7 @@ $(document).ready( function() {
 
 $(document).ready( function(){
 
-    $('#articles_nav').click( function(event){
-        event.stopPropagation();
-        $('#drop').toggle();
-    });
-
-    $(document).click( function(){
-        $('#articles_drop').hide();
-    });
-
-});
-
-$(document).ready( function(){
-
-    $('#info_nav').click( function(event){
-        event.stopPropagation();
-        $('#drop').toggle();
-    });
-
-    $(document).click( function(){
-        $('#info_drop').hide();
-    });
+    $( '#articles_nav li:has(ul)' ).doubleTapToGo();
+    $( '#info_nav li:has(ul)' ).doubleTapToGo();
 
 });

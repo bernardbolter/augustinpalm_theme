@@ -53,6 +53,8 @@
 	text-align: left;
 	color: #666;
 	margin: 5px 0;
+	font-weight: 200;
+	letter-spacing: 0.05em;
 }
 
 .cat_loop_text_box p {
@@ -101,4 +103,8 @@
 
 .cover_tech {
 	background: $tech;
+}
+
+.cover_about {
+	background: $about;
 }

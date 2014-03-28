@@ -54,26 +54,15 @@ input, textarea {
 	Settings
 \******************************************************************************/
 @font-face {
+  font-family: 'DIN30640StdNeuzeitGroteskLight';
+  src: url("fonts/dinneuzeitgroteskstd-light.eot");
+  src: url("fonts/dinneuzeitgroteskstd-light.eot") format("embedded-opentype"), url("fonts/dinneuzeitgroteskstd-light.woff") format("woff"), url("fonts/dinneuzeitgroteskstd-light.ttf") format("truetype"), url("fonts/dinneuzeitgroteskstd-light.svg#DIN30640StdNeuzeitGroteskLight") format("svg");
+}
+@font-face {
   font-family: "DINNeuzeitGroteskStd-Light";
   src: url(font-path("dinneuzeitgroteskstd-light-webfont.eot"));
   src: url(font-path("dinneuzeitgroteskstd-light-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("dinneuzeitgroteskstd-light-webfont.woff")) format("woff"), url(font-path("dinneuzeitgroteskstd-light-webfont.ttf")) format("truetype"), url(font-path("dinneuzeitgroteskstd-light-webfont.svg#DINNeuzeitGroteskStd-Light")) format("svg");
   font-weight: 200;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "news_cyclebold";
-  src: url(font-path("newscycle-bold-webfont.eot"));
-  src: url(font-path("newscycle-bold-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-bold-webfont.woff")) format("woff"), url(font-path("newscycle-bold-webfont.ttf")) format("truetype"), url(font-path("newscycle-bold-webfont.svg#news_cyclebold")) format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-}
-@font-face {
-  font-family: "news_cycleregular";
-  src: url(font-path("newscycle-regular-webfont.eot"));
-  src: url(font-path("newscycle-regular-webfont.eot?#iefix")) format("embedded-opentype"), url(font-path("newscycle-regular-webfont.woff")) format("woff"), url(font-path("newscycle-regular-webfont.ttf")) format("truetype"), url(font-path("newscycle-regular-webfont.svg#news_cycleregular")) format("svg");
-  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
 }
@@ -88,7 +77,7 @@ html {
 	Standard font styling
 \******************************************************************************/
 body {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
@@ -133,7 +122,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "DINNeuzeitGroteskStd-Light", sans-serif;
+  font-family: "DIN30640StdNeuzeitGroteskLight", sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
 }

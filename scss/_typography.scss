@@ -19,12 +19,19 @@ font-stretch: $font-stretch;
 }
 }
 
+@font-face {
+    font-family: 'DIN30640StdNeuzeitGroteskLight';
+    src: url('fonts/dinneuzeitgroteskstd-light.eot');
+    src: url('fonts/dinneuzeitgroteskstd-light.eot') format('embedded-opentype'),
+         url('fonts/dinneuzeitgroteskstd-light.woff') format('woff'),
+         url('fonts/dinneuzeitgroteskstd-light.ttf') format('truetype'),
+         url('fonts/dinneuzeitgroteskstd-light.svg#DIN30640StdNeuzeitGroteskLight') format('svg');
+}
+
 @include declare-font-face('DINNeuzeitGroteskStd-Light', 'dinneuzeitgroteskstd-light-webfont', 200);
-@include declare-font-face('news_cyclebold', 'newscycle-bold-webfont', 700);
-@include declare-font-face('news_cycleregular', 'newscycle-regular-webfont', 400);
 
 // Variables
-$base-font: 'DINNeuzeitGroteskStd-Light', sans-serif;
+$base-font: 'DIN30640StdNeuzeitGroteskLight', sans-serif;
 $body-font: 'Tinos', serif;
 $base-line-height: 1.5;
 
