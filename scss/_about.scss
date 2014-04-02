@@ -84,6 +84,8 @@
 	display: block;
 	overflow: hidden;
 	margin: 5px auto 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
 	@include transition (all 0.5s ease);
 
 	@media (min-width: 420px) {
@@ -246,7 +248,7 @@
 	@include font-size(1.8);
 	line-height: 22px;
 	text-indent: 20px;
-	margin: 10px 0;
+	margin: 5px 0;
 	color: #444;
 	text-align: center;
 }
@@ -290,10 +292,11 @@
 	font-weight: bold;
 	font-family: $base-font;
 	display: block;
-	width: 90%;
+	width: 100%;
 	text-align: right;
 	border-bottom: 1px solid black;
 	padding-bottom: 4px;
+	margin: 10px 0 !important;
 }
 
 .about_header_client_small {

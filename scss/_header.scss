@@ -69,9 +69,24 @@
 }
 
 #descript_text {
-	font-family: 'DINNeuzeitGroteskStd-Light', sans-serif;
+	font-family: $base-font;
 	@include font-size(1.5);
 	color: #eee;
 	letter-spacing: 0.5em;
 	text-align: center;
+
+	@include respond-to(medium) {
+		@include font-size(1.7);
+		padding: 5px 0 0 0;
+	}
+
+	@include respond-to(large) {
+		@include font-size(1.9);
+		padding: 10px 0 0 0;
+	}
+
+	@include respond-to(xlarge) {
+		@include font-size(2.1);
+		padding: 15px 0 0 0;
+	}
 }
