@@ -12,7 +12,7 @@
 		<li class="bot_tech"><a href="<?php echo home_url( '/' ); ?>it-media-tech">IT, MEDIA & TECH <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_cover"><a href="<?php echo home_url( '/' ); ?>cover-stories">COVER STORIES <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_about"><a href="<?php echo home_url( '/' ); ?>about">ABOUT <i class="fa fa-plus awe_font"></i></a></li>
-		<li class="bot_photo"><a href="#">PHOTOGRAPHY <i class="fa fa-plus awe_font"></i></a></li>
+		<li class="bot_photo"><a href="<?php echo home_url( '/' ); ?>photography">PHOTOGRAPHY <i class="fa fa-plus awe_font"></i></a></li>
 		<li class="bot_other"><a href="#">OTHER PROJECTS <i class="fa fa-plus awe_font"></i></a></li>
 	</ul>
 </div>

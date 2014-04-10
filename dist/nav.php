@@ -25,7 +25,7 @@
 				<li><a href="#" id="info_nav">INFO</a>
 					<ul id="info_drop">
 						<li class="nav_about"><a href="<?php echo home_url( '/' ); ?>about">ABOUT<i class="fa fa-plus awe_font"></i></a></li>
-						<li class="nav_photo"><a href="#">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
+						<li class="nav_photo"><a href="<?php echo home_url( '/' ); ?>photography">PHOTOGRAPHY<i class="fa fa-plus awe_font"></i></a></li>
 						<li class="nav_other"><a href="#">OTHER PROJECTS<i class="fa fa-plus awe_font"></i></a></li>
 						<li id="contact_but" class="nav_contact"><a href="#contact">CONTACT<i class="fa fa-plus awe_font"></i></a></li>
 					</ul> <!-- info_drop -->

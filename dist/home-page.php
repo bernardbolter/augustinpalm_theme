@@ -12,7 +12,7 @@ Template Name: Home Page
 
 <div id="short_bio_box" class="clearfix">
 	<p class="short_bio_plus"><i class="fa fa-plus"></i></p>
-	<h1 class="short_bio_text"><span class="short_bio_bold">Erik Augustin Palm</span> is a <span class="short_bio_bold">Swedish</span> freelance journalist and translator that writes mainly about pop culture and subculture, but also travel and social issues.  He is published in many of <span class="short_bio_bold">Sweden’s</span> biggest magazines and daily newspapers and has interviewed numerous of the heaviest names in <span class="short_bio_bold">American</span> music, film and television.</h1>
+	<h1 class="short_bio_text"><span class="short_bio_bold">Erik Augustin Palm</span> is a <span class="short_bio_bold">Swedish freelance journalist</span>, translator and copywriter based in <span class="short_bio_bold">San Francisco</span>. He mainly writes about <span class="short_bio_bold">culture, media, the arts, lifestyle, travel, IT, society</span> and <span class="short_bio_bold">politics</span>, and is published in most of <span class="short_bio_bold">Sweden’s biggest magazines</span> and <span class="short_bio_bold">daily newspapers</span>. He has interviewed numerous of the <span class="short_bio_bold">heaviest names</span> in <span class="short_bio_bold">American music, film and television</span>. This site gathers a selection of his articles.<span class="short_bio_click">Click on a thumbnail to read</span></h1>
 	<ul class="short_bio_text_icons">
 		<li><a href="http://www.facebook.com/augustinpalm"><i class="fa fa-facebook-square"></i></a></li>
 		<li><a href="http://instagram.com/augustinpalm"><i class="fa fa-instagram"></i></a></li>

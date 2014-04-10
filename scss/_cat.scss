@@ -1,4 +1,4 @@
-#cat_loop_wrap {
+#cat_loop_list {
 	width: 270px;
 	margin: 2% auto;
 	display: block;
@@ -37,6 +37,10 @@
 
 .item img {
 	box-shadow: 2px 2px 2px #777;
+
+	@media (min-width: 440px) {
+		width: 100%;
+	}
 }
 
 .item a {
@@ -136,4 +140,8 @@
 
 .cover_about {
 	background: $about;
+}
+
+.cover_photo {
+	background: $photo;
 }

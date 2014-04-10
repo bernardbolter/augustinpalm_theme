@@ -30,6 +30,9 @@
 		elseif ( is_page( '11' ) ){
 			echo "<p class=\"cover_about\">ABOUT</p>";
 		}
+		elseif ( is_page( '118' ) ){
+			echo "<p class=\"cover_photo\">PHOTOGRAPHY</p>";
+		}
 		elseif ( is_page( '100' ) ){
 			echo "<p class=\"dark_bread\">COVER STORIES <span class=\"small_select\">(IN SELECTION)</span></p>";
 		}

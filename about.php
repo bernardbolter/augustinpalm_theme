@@ -20,8 +20,8 @@ Template Name: About
 	</div>
 	<div id="about_celebs" class="clearfix">
 		<div class="about_celeb_wrap">
-			<img src="<?php echo bloginfo( 'template_url' ); ?>/gfx/celebs/woody_harrelson.jpg" alt="photo with Woody Harrelson" />
-			<p>WOODY HARRELSON</p>
+			<img src="<?php echo bloginfo( 'template_url' ); ?>/gfx/celebs/bryan_cranston.jpg" alt="photo with Bryan Cranston" />
+			<p>BRYAN CRANSTON</p>
 		</div>
 		<div class="about_celeb_wrap">
 			<img src="<?php echo bloginfo( 'template_url' ); ?>/gfx/celebs/mary_j_blige.jpg" alt="photo with Mary J Blige" />
@@ -48,8 +48,8 @@ Template Name: About
 			<p>SNOOP DOGG</p>
 		</div>
 		<div class="about_celeb_wrap">
-			<img src="<?php echo bloginfo( 'template_url' ); ?>/gfx/celebs/bryan_cranston.jpg" alt="photo with Bryan Cranston" />
-			<p>BRYAN CRANSTON</p>
+			<img src="<?php echo bloginfo( 'template_url' ); ?>/gfx/celebs/woody_harrelson.jpg" alt="photo with Woody Harrelson" />
+			<p>WOODY HARRELSON</p>
 		</div>
 	</div>
 	<div id="about_mid_box" class="clearfix">
@@ -124,7 +124,6 @@ Template Name: About
 		<p><a href="http://www.unt.se">Upsala Nya Tidning</a></p>
 		<p><a href="http://www.vilaser.se">Vi Läser</a></p>
 		<p><a href="http://www.vice.com">Vice Magazine</a></p>
-		<p><a href="http://www.vice.com">Vice Magazine</a></p>
 	</div>
 </div>
 
@@ -135,3 +134,4 @@ Template Name: About
 <?php endif; ?>
 
 <?php get_footer(); ?>
+

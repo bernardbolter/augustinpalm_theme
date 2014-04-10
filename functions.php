@@ -113,3 +113,13 @@ function augustinpalm_theme_post_meta() {
 	}
 	edit_post_link( __( ' (edit)', 'augustinpalm_theme' ), '<span class="edit-link">', '</span>' );
 }
+
+add_filter( 'show_admin_bar', '__return_false' );
+
+add_action( 'admin_print_scripts-profile.php', 'wpbeginner_hide_admin_bar' );
+function wpbeginner_hide_admin_bar() { ?>
+<style type="text/css">
+    .show-admin-bar { display: none; }
+</style>
+<?php
+}

@@ -62,9 +62,19 @@ $(window).load(function () {
     });
 });
 
-$(document).ready( function(){
+$(window).load(function () {
+    var $photobox = $('#photo_loop_container');
+    // initialize
+    $photobox.masonry({
+      columnWidth: 320,
+      itemSelector: '.photo_box'
+    });
+});
+
+$(document).ready(function (){
 
     $( '#articles_nav li:has(ul)' ).doubleTapToGo();
     $( '#info_nav li:has(ul)' ).doubleTapToGo();
+    $( '.swipebox' ).swipebox();
 
 });
