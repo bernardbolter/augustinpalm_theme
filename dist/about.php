@@ -59,7 +59,7 @@ Template Name: About
 	</div>
 	<div id="about_bot_box" class="clearfix">
 		<h4>To contact Erik, please fill in the form below, </h4>
-		<h4>or send an e-mail to: erik@augustinpalm.se</h4>
+		<h4>or send an e-mail to: <a href="mailto:erik@augustinpalm.se">erik@augustinpalm.se</a></h4>
 	</div>
 	<div id="about_clients_box">
 		<p class="about_clients_header">CLIENTS <span class="about_header_client_small">(IN SELECTION)</span>:</p>
